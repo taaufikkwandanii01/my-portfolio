@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  background-color: hsl(195, 40%, 8%);
+  color: white;
+}
+
+/* css untuk navbar selalu diatas*/
+.navbar-fixed {
+  @apply fixed z-[9999];
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* css untuk hamburger*/
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-white;
+}
+
+.hamburger-active>span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active>span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active>span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+/* css untuk mengetahui menu yang sedang aktif*/
+.active-menu {
+  @apply text-blue-300;
+}
+
+/* css untuk marquee*/
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+    /* Tengah */
+  }
+
+  25% {
+    transform: translateX(25%);
+    /* Sedikit ke kanan */
+  }
+
+  50% {
+    transform: translateX(0);
+    /* Kembali ke tengah */
+  }
+
+  75% {
+    transform: translateX(-125%);
+    /* Sedikit ke kiri */
+  }
+
+  100% {
+    transform: translateX(0);
+    /* Kembali ke tengah */
+  }
+}
+
+.animate-marquee {
+  animation: marquee 6s ease-in-out infinite;
+}
+
+/* css untuk scrollbar hidden*/
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE & Edge */
+    scrollbar-width: none; /* Firefox */
+  }

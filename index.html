@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taufik W. - Web Developer</title>
+  <link href="dist/output.css" rel="stylesheet">
+  <link rel="icon" href="dist/img/icon/icon-1.png" type="image/png" sizes="246x166">
+  <!--aos (animate on scroll)-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Header Start -->
+  <header class="bg-transparent backdrop-blur-lg fixed top-0 left-0 w-full flex items-center z-50">
+    <div class="container mx-auto px-4 md:px-4 lg:px-8">
+      <div class="w-full flex items-center justify-between h-20">
+        <div class="flex items-center justify-start">
+          <a href="#hero" class="font-mono font-bold text-xl border-y-2 border-blue-300">
+            Taufik Wandani
+          </a>
+        </div>
+        <div class="flex items-center justify-end">
+          <button id="hamburger" name="hamburger" type="button" class="block lg:hidden">
+            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+          </button>
+          <nav id="nav-menu"
+            class="hidden fixed top-full left-0 w-full h-screen bg-blue-950 shadow-lg opacity-0 -translate-y-5 transition-all duration-300 z-40 border-t-2 border-blue-300 lg:border-t-0 lg:static lg:h-auto lg:block lg:bg-transparent lg:shadow-none lg:opacity-100 lg:translate-y-0">
+            <ul class="flex flex-col items-center h-full lg:flex-row">
+              <li class="group">
+                <a href="#hero"
+                  class="font-mono font-bold py-2 mx-4 flex transition duration-300 hover:text-blue-300">hero</a>
+              </li>
+              <li class="group">
+                <a href="#about"
+                  class="font-mono font-bold py-2 mx-4 flex transition duration-300 hover:text-blue-300">about
+                  me</a>
+              </li>
+              <li class="group">
+                <a href="#experience"
+                  class="font-mono font-bold py-2 mx-4 flex transition duration-300 hover:text-blue-300">experience</a>
+              </li>
+              <li class="group">
+                <a href="#project"
+                  class="text-base font-bold py-2 mx-4 flex transition duration-300 hover:text-blue-300">project</a>
+              </li>
+              <li class="group">
+                <a href="#certificate"
+                  class="font-mono font-bold py-2 mx-4 flex transition duration-300 hover:text-blue-300">license
+                  & certificate</a>
+              </li>
+              <li class="group">
+                <a href="#resume"
+                  class="font-mono font-bold py-2 mx-4 flex transition duration-300 hover:text-blue-300">resume</a>
+              </li>
+              <li class="group">
+                <a href="#contact"
+                  class="font-mono font-bold py-2 mx-4 flex transition duration-300 hover:text-blue-300">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen w-full flex flex-col justify-between pt-24">
+    <div class="container mx-auto flex-grow flex flex-col items-center justify-center p-4">
+      <div data-aos="zoom-in" data-aos-duration="2000" class="z-10 text-center">
+        <h1 class="font-mono font-extrabold text-7xl lg:text-9xl uppercase">Taufik Wandani</h1>
+        <p class="font-mono font-bold text-blue-300 text-2xl lg:text-3xl">Front-End Web Developer</p>
+      </div>
+
+      <!-- Marquee Skill Icon -->
+      <div class="w-full mt-20 overflow-hidden">
+        <div class="relative flex items-center justify-center gap-4 px-4 md:px-16">
+          <div class="z-10 bg-white dark:bg-transparent">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+          </div>
+
+          <div class="relative w-full max-w-[400px] overflow-hidden">
+            <div class="flex gap-6 animate-marquee whitespace-nowrap">
+              <img src="dist/img/icon/html.png" alt="HTML" width="50" height="50"
+                class="object-contain pointer-events-none">
+              <img src="dist/img/icon/css.png" alt="CSS" width="50" height="50"
+                class="object-contain pointer-events-none">
+              <img src="dist/img/icon/bootstrap.png" alt="Bootstrap" width="50" height="50"
+                class="object-contain pointer-events-none">
+              <img src="dist/img/icon/tailwindcss.png" alt="Tailwind CSS" width="50" height="50"
+                class="object-contain pointer-events-none">
+              <img src="dist/img/icon/php.png" alt="PHP" width="50" height="50"
+                class="object-contain pointer-events-none">
+              <img src="dist/img/icon/javascript.png" alt="JavaScript" width="50" height="50"
+                class="object-contain pointer-events-none">
+              <img src="dist/img/icon/java.png" alt="Java" width="50" height="50"
+                class="object-contain pointer-events-none">
+              <img src="dist/img/icon/mysql.png" alt="MySql" width="50" height="50"
+                class="object-contain pointer-events-none">
+              <img src="dist/img/icon/firebase.png" alt="Firebase" width="50" height="50"
+                class="object-contain pointer-events-none">
+              <img src="dist/img/icon/vscode.png" alt="VS Code" width="50" height="50"
+                class="object-contain pointer-events-none">
+              <img src="dist/img/icon/andstudio.png" alt="Android Studio" width="50" height="50"
+                class="object-contain pointer-events-none">
+              <img src="dist/img/icon/github.png" alt="Github" width="50" height="50"
+                class="object-contain pointer-events-none">
+            </div>
+          </div>
+
+          <div class="z-10 bg-white dark:bg-transparent">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center mb-6">
+      <a href="#about" class="group">
+        <div
+          class="w-14 h-28 border border-gray-600 rounded-full flex flex-col items-center justify-end hover:border-blue-300 hover:border-3 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-8 text-blue-300 animate-bounce">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+          </svg>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- Hero Section End -->
+
+  <!-- About Section -->
+  <section id="about" class="relative min-h-screen w-full flex flex-col pt-24 bg-blue-950">
+    <div class="container mx-auto px-4 md:px-6 lg:px-8">
+      <div class="w-full">
+        <h2 class="text-5xl font-bold text-center mb-10">About Me</h2>
+        <div class="flex flex-col-reverse md:flex-row">
+          <div class="md:w-2/3 lg:w-3/4">
+            <div data-aos="fade-right" data-aos-duration="1000">
+              <h1 class="font-mono font-extrabold text-sm md:text-lg">Hi there ✋ i'm
+                <span class="text-4xl md:text-7xl block">TAUFIK WANDANI</span></h1>
+              <h2 class="font-mono font-bold text-sm md:text-lg mb-3">Frashgraduate in Informatics Engineering</h2>
+              <p class="font-mono text-sm md:text-lg text-justify mb-3">Saya adalah lulusan Teknik Informatika dari
+                Universitas Komputer Indonesia. Saya memiliki keterampilan dalam
+                pengembangan perangkat lunak, khususnya pada Pengembangan Web. Pengalaman langsung dalam membangun
+                sebuah
+                web application selama magang dan beberapa proyek lainnya telah memperkuat keterampilan teknis saya.
+                Serta
+                didukung
+                dengan sertifikasi dari BNSP (Badan Nasional Sertifikasi Profesi). </p>
+              <p class="font-mono text-sm md:text-lg text-justify mb-10">Selain itu, saya memiliki pemahaman
+                mengenai
+                pengolahan data, yang mendorong ketertarikan saya pada peran Data Entry. Dengan ini saya bertujuan untuk
+                menerapkan
+                pengetahuan saya secara profesional dan berkontribusi di Industri Teknologi, serta terus tumbuh dan
+                mengembangkan
+                keterampilan saya.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center">
+            <div class="m-5">
+              <img src="dist/img/icon/icon-1.png" alt="Personal Icon" class="w-64 h-64">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+
+  <!-- Experience Section-->
+  <section id="experience" class="pt-24 pb-10">
+    <div class="container">
+      <h2 class="section-title text-center text-5xl font-bold mb-10">Experience</h2>
+
+      <div class="w-full max-w-4xl space-y-4 px-4 mx-auto">
+        <!-- Accordion -->
+        <div class="rounded-lg overflow-hidden">
+          <button class="w-full px-4 py-4 cursor-pointer bg-blue-800 hover:bg-blue-900 transition-colors"
+            onclick="toggleAccordion('accordion1')">
+            <div class="flex lg:flex-row">
+              <div class="w-full flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                <p class="font-mono font-bold text-left text-sm lg:text-xl">Web Developer (Magang) @ PT Dirgantara
+                  Indonesia</p>
+                <p class="font-mono text-left text-xs lg:text-sm">September 2023 - Oktober 2023</p>
+              </div>
+              <div class="flex items-center">
+                <svg id="icon-accordion1" xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 transform transition-transform duration-300 animate-pulse" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
+          </button>
+          <div id="accordion1"
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-blue-950 px-4">
+            <div class="w-full py-3 md:py-6">
+              <div class="w-full flex flex-col-reverse md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-2">
+                  <span class="font-mono text-xs lg:text-sm">Bandung, Indonesia</span>
+                  <a href="https://www.indonesian-aerospace.com/en/" target="_blank" rel="noopener noreferrer"
+                    class="flex items-center gap-0 hover:text-blue-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                    </svg>
+                    <span class="font-mono text-xs lg:text-sm">indonesian-aerospace.com</span>
+                  </a>
+                </div>
+                <div>
+                  <img src="dist/img/experience/ptdi.png" alt="PTDI Logo" class="w-16 h-16 object-contain">
+                </div>
+              </div>
+              <div class="mt-4">
+                <p class="font-mono text-sm lg:text-lg text-justify mb-3">
+                  Selama program magang, saya bekerja bersama tim yang terdiri dari lima orang dalam membangun web
+                  application bernama SkillMatriks, yang bertujuan membantu manajer di divisi aircraft dalam mengelola
+                  data karyawan dan memantau masa kedaluwarsa sertifikasi profesi. Saya bertanggung jawab merancang dan
+                  mengembangkan sistem informasi, terutama fitur utama seperti kelola data karyawan (tambah, edit,
+                  hapus, dan pencarian), serta monitoring sertifikasi. Tantangan terbesar yang saya hadapi adalah
+                  membangun fitur pengingat otomatis untuk karyawan yang sertifikasinya telah kedaluwarsa. Untuk
+                  mengatasi hal ini, saya menggunakan PHPMailer guna mengirim email secara otomatis kepada karyawan
+                  terkait.
+                </p>
+                <p class="font-mono text-sm lg:text-lg text-justify">
+                  Hasil dari proyek ini adalah berhasilnya pengembangan aplikasi SkillMatriks, yang mendapatkan skor
+                  100% pada pengujian beta terkait kemudahan monitoring dan efektivitas notifikasi. Selama magang, saya
+                  juga aktif berkomunikasi dengan tim dan manajer, yang memperkaya pemahaman saya terhadap kebutuhan
+                  pengguna dan pentingnya kolaborasi. Pengalaman ini memberikan pelajaran berharga mengenai peran
+                  teknologi dalam meningkatkan efisiensi operasional, serta pentingnya komunikasi dalam pengembangan
+                  perangkat lunak.
+                </p>
+              </div>
+              <div class="flex flex-wrap items-center justify-center gap-2 mt-4">
+                <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Web Developer</span>
+                <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Front-End
+                  Developer</span>
+                <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Back-End Web
+                  Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion -->
+        <div class="rounded-lg overflow-hidden">
+          <button class="w-full px-4 py-4 cursor-pointer bg-blue-800 hover:bg-blue-900 transition-colors"
+            onclick="toggleAccordion('accordion2')">
+            <div class="flex lg:flex-row">
+              <div class="w-full flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                <p class="font-mono font-bold text-left text-sm lg:text-xl">Pengarsipan (Magang) @ KPP Pratama Bandung
+                  Karees</p>
+                <p class="font-mono text-left text-xs lg:text-sm">Agustus 2019 - Oktober 2019</p>
+              </div>
+              <div class="flex items-center">
+                <svg id="icon-accordion2" xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 transform transition-transform duration-300 animate-pulse" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
+          </button>
+          <div id="accordion2"
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-blue-950 px-4">
+            <div class="w-full py-3 md:py-6">
+              <div class="w-full flex flex-col-reverse md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-2">
+                  <span class="font-mono text-xs lg:text-sm">Bandung, Indonesia</span>
+                  </a>
+                </div>
+                <div>
+                  <img src="dist/img/experience/djp.jfif" alt="DJP Logo" class="w-16 h-16 object-contain">
+                </div>
+              </div>
+              <div class="mt-4">
+                <p class="font-mono text-sm lg:text-lg text-justify mb-3">
+                  Bekerja dengan 3 orang untuk melakukan pengelolaan berkas pajak seperti SPT tahunan, SKP tahunan,
+                  serta membangun sebuah website untuk mengetahui posisi/letak berkas disimpan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Experience Section End-->
+
+  <!-- Project Section-->
+  <section id="project" class="pt-24 pb-6">
+    <div class="container px-4 md:px-6 lg:px-8">
+      <div class="w-full flex flex-wrap mb-10">
+        <div class="flex items-center justify-center md:w-1/2">
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="text-center md:text-left">
+              <h1 class="text-5xl lg:text-8xl font-extrabold">AwayDay</h1>
+              <p class="font-mono text-sm md:text-lg my-3">
+                Membangun aplikasi berbasis mobile android untuk membantu suporter dalam melakukan monitoring
+                rombongan
+                suporter sepak bola ketika bertandang. Penelitian ini merupakan bagian tugas akhir (skripsi) saya.
+                Aplikasi ini disebut "AwayDay".
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-2">
+              <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Java</span>
+              <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Google Maps API</span>
+              <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">OneSignal API</span>
+              <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Firebase</span>
+              <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Firebase
+                Authentication</span>
+              <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Firebase Real-time
+                Database</span>
+              <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Android Studio</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center md:w-1/2">
+          <div class="overflow-x-auto flex gap-1 hide-scrollbar md:mx-2">
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/01.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/02.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/03.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/04.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/05.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/01.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/01.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full flex flex-wrap mb-10 md:flex-row-reverse">
+        <div class="flex items-center justify-center md:w-1/2">
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="text-center md:text-right">
+              <h1 class="text-5xl lg:text-8xl font-extrabold">Skill Matriks</h1>
+              <p class="font-mono text-sm md:text-lg my-3">
+                Membangun web application untuk membantu manajer dalam melakukan pengelolaan data karyawan dan
+                monitoring masa kadaluwarsa sertifikasi profesi karyawan di divisi aircraft. Web application ini
+                disebut "SkillMatriks".
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-2">
+              <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">PHP</span>
+              <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Database Management
+                System (DBMS)</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex items-center justify-center md:w-1/2">
+          <div class="overflow-x-auto flex gap-1 hide-scrollbar md:mx-2">
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/01.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/02.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/03.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/04.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/05.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/01.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+            <div class="flex-shrink-0 max-h-[225px]">
+              <img src="dist/img/project/awayday-apk/01.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
+                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Project Section End-->
+
+  <!-- Certificate Section-->
+  <section id="certificate" class="pt-24 pb-24">
+    <div class="container mx-auto px-4">
+      <h2 class="text-center text-5xl font-bold">License & Certificate</h2>
+    </div>
+  </section>
+  <!-- Certificate Section End-->
+
+  <!-- Resume Section-->
+  <section id="resume" class="pt-36 pb-24">
+    <div class="container mx-auto px-4">
+      <h2 class="text-center text-5xl font-bold">Resume</h2>
+    </div>
+  </section>
+  <!-- Resume Section End-->
+
+  <!-- Contact Section-->
+  <section id="contact" class="pt-24 pb-6">
+    <div class="container mx-auto">
+      <div class="w-full px-4 md:px-6 lg:px-8">
+        <h2 class="text-4xl sm:text-6xl lg:text-7xl font-bold text-center mb-7">Mempunyai Ide Membangun Sebuah Proyek?
+          <span class="block">Saya Terbuka Untuk Berkolaborasi</span></h2>
+        <div class="flex flex-col items-center">
+          <p class="font-mono text-lg md:text-2xl text-center max-w-5xl">
+            Saya terbuka untuk berbagai kolaborasi. Baik itu dalam pekerjaan purna waktu (full-time) untuk tim anda,
+            atau pekerja paruh waktu (part-time) untuk mengerjakan proyek tertentu. Saya akan senang mendengarnya.
+          </p>
+          <p class="font-mono text-lg md:text-2xl text-center max-w-5xl my-4">Kotak masuk saya selalu terbuka. Mari kita
+            diskusikan bagaimana kita bisa menciptakan sesuatu yang luar biasa bersama-sama.</p>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-8">
+          <a target="_blank" rel="noopener noreferrer" aria-label="Gmail"
+            class="font-mono text-lg md:text-2xl underline" href="mailto:taaufikkwandanii01@gmail.com">Gmail</a>
+          <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+            class="font-mono text-lg md:text-2xl underline"
+            href="https://www.linkedin.com/in/taufikwandani/">LinkedIn</a>
+          <a target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+            class="font-mono text-lg md:text-2xl underline" href="https://github.com/taaufikkwandanii01">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End-->
+
+  <!--Footer-->
+  <footer class="pt-5 pb-5 mx-5">
+    <div class="container">
+      <div class="w-full pt-5 border-x border-t border-slate-700">
+        <p class="font-mono font-semibold text-sm text-slate-600 text-center">
+          <a href="#hero" class="font-semibold">
+            &copy; 2025 Taufik Wandani
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!--Footer End-->
+
+  <script src="dist/js/script.js"></script>
+  <!--aos (animate on scroll)-->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--aos (animate on scroll) end-->
+
+  <!--accordion-->
+  <script>
+    function toggleAccordion(id) {
+      const content = document.getElementById(id);
+      const icon = document.getElementById(`icon-${id}`);
+
+      if (content.classList.contains('max-h-0')) {
+        content.classList.remove('max-h-0');
+        content.classList.add('max-h-[1000px]');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.remove('max-h-[1000px]');
+        content.classList.add('max-h-0');
+        icon.classList.remove('rotate-180');
+      }
+    }
+  </script>
+  <!--accordion end-->
+</body>
+
+</html>
