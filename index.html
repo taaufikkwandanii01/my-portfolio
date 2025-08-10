@@ -14,7 +14,7 @@
 <body>
   <!-- Header Start -->
   <header class="w-full fixed top-0 left-0 z-50 px-3 md:px-10 bg-transparent backdrop-blur-lg">
-    <div class="w-full flex items-center justify-between h-15 lg:h-20">
+    <div class="w-full flex items-center justify-between h-20">
       <div class="flex items-center">
         <a href="#hero" class="font-serif font-bold text-base md:text-xl border-y-2 border-blue-300">
           Taaufikk W.
@@ -27,7 +27,7 @@
           <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
         </button>
         <nav id="nav-menu"
-          class="hidden w-full fixed top-full left-0 h-screen bg-blue-950 shadow-lg opacity-0 -translate-y-5 transition-all duration-300 z-40 border-t-2 border-blue-300 lg:border-t-0 lg:static lg:h-auto lg:block lg:bg-transparent lg:shadow-none lg:opacity-100 lg:translate-y-0">
+          class="hidden w-full fixed top-full left-0 h-screen bg-blue-950 shadow-lg opacity-0 -translate-y-5 transition-all duration-300 z-50 border-t-2 border-blue-300 lg:border-t-0 lg:static lg:h-auto lg:block lg:bg-transparent lg:shadow-none lg:opacity-100 lg:translate-y-0">
           <ul class="flex flex-col lg:flex-row items-center py-2 gap-3 lg:gap-6 text-sm lg:text-lg">
             <li class="group">
               <a href="#hero" class="font-mono font-bold flex transition duration-300 hover:text-blue-300">hero</a>
@@ -169,20 +169,20 @@
   <!-- About Section End -->
 
   <!-- Experience Section-->
-  <section id="experience" class="py-20 flex flex-col items-center justify-center">
+  <section id="experience" class="w-full flex flex-col items-center py-20 px-3 md:px-8 bg-green-950">
     <div class="container">
-      <h2 class="section-title text-center text-5xl font-bold mb-10">Experience</h2>
+      <h2 class="text-5xl font-bold text-center mb-10">Experience</h2>
 
-      <div class="w-full max-w-4xl space-y-4 mx-auto">
+      <div class="w-full max-w-4xl mx-auto">
         <!-- Accordion -->
-        <div class="rounded-lg overflow-hidden">
+        <div class="rounded-xl overflow-hidden mb-5">
           <button class="w-full cursor-pointer bg-blue-800 hover:bg-blue-900 transition-colors"
             onclick="toggleAccordion('accordion1')">
-            <div class="flex lg:flex-row">
-              <div class="w-full flex flex-col lg:flex-row lg:items-center lg:justify-between">
+            <div class="flex md:flex-row items-center justify-between my-5 mx-3">
+              <div class="w-full flex flex-col items-start md:flex-row md:items-center md:justify-between">
                 <p class="font-mono font-bold text-left text-sm lg:text-xl">Web Developer (Magang) @ PT Dirgantara
                   Indonesia</p>
-                <p class="font-mono text-left text-xs lg:text-sm">September 2023 - Oktober 2023</p>
+                <p class="font-mono text-left text-sm lg:text-sm">Sep 2023 - Okt 2023</p>
               </div>
               <div class="flex items-center">
                 <svg id="icon-accordion1" xmlns="http://www.w3.org/2000/svg"
@@ -195,25 +195,33 @@
           </button>
           <div id="accordion1"
             class="accordion-content max-h-0 overflow-hidden bg-blue-950 transition-all duration-500 ease-in-out">
-            <div class="w-full">
-              <div class="w-full flex flex-col-reverse md:flex-row items-center justify-between">
-                <div class="flex items-center">
-                  <span class="font-mono text-xs lg:text-sm">Bandung, Indonesia</span>
+            <div class="my-5 mx-3">
+              <div class="w-full flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-5 mb-3">
+                <div class="flex justify-center gap-3">
+                  <p class="flex items-center font-mono text-xs lg:text-sm gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-3 h-3">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <span>Bandung, Indonesia</span>
+                  </p>
                   <a href="https://www.indonesian-aerospace.com/en/" target="_blank" rel="noopener noreferrer"
-                    class="flex items-center gap-0 hover:text-blue-300">
+                    class="flex items-center font-mono text-xs lg:text-sm gap-1 hover:text-blue-300">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24"
                       stroke-width="1.5" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round"
                         d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
                     </svg>
-                    <span class="font-mono text-xs lg:text-sm">indonesian-aerospace.com</span>
+                    <span>Link</span>
                   </a>
                 </div>
-                <div>
+                <div class="flex justify-center">
                   <img src="dist/img/experience/ptdi.png" alt="PTDI Logo" class="w-16 h-16 object-contain">
                 </div>
               </div>
-              <div class="mt-4">
+              <div class="flex flex-col">
                 <p class="font-mono text-sm lg:text-lg text-justify mb-3">
                   Selama program magang, saya bekerja bersama tim yang terdiri dari lima orang dalam membangun web
                   application bernama SkillMatriks, yang bertujuan membantu manajer di divisi aircraft dalam mengelola
@@ -224,7 +232,7 @@
                   mengatasi hal ini, saya menggunakan PHPMailer guna mengirim email secara otomatis kepada karyawan
                   terkait.
                 </p>
-                <p class="font-mono text-sm lg:text-lg text-justify">
+                <p class="font-mono text-sm lg:text-lg text-justify mb-3">
                   Hasil dari proyek ini adalah berhasilnya pengembangan aplikasi SkillMatriks, yang mendapatkan skor
                   100% pada pengujian beta terkait kemudahan monitoring dan efektivitas notifikasi. Selama magang, saya
                   juga aktif berkomunikasi dengan tim dan manajer, yang memperkaya pemahaman saya terhadap kebutuhan
@@ -233,12 +241,67 @@
                   perangkat lunak.
                 </p>
               </div>
-              <div class="flex flex-wrap items-center justify-center gap-2 mt-4">
+              <div class="flex flex-wrap items-center justify-center gap-2">
                 <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Web Developer</span>
                 <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Front-End
                   Developer</span>
                 <span class="font-mono px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Back-End Web
                   Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion -->
+        <div class="rounded-xl overflow-hidden mb-5">
+          <button class="w-full cursor-pointer bg-blue-800 hover:bg-blue-900 transition-colors"
+            onclick="toggleAccordion('accordion2')">
+            <div class="flex md:flex-row items-center justify-between my-5 mx-3">
+              <div class="w-full flex flex-col items-start md:flex-row md:items-center md:justify-between">
+                <p class="font-mono font-bold text-left text-sm lg:text-xl">Pengarsipan (Magang) @ KPP Pratama Bandung Karees</p>
+                <p class="font-mono text-left text-sm lg:text-sm">Agu 2019 - Okt 2019</p>
+              </div>
+              <div class="flex items-center">
+                <svg id="icon-accordion2" xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 transform transition-transform duration-300 animate-pulse" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
+          </button>
+          <div id="accordion2"
+            class="accordion-content max-h-0 overflow-hidden bg-blue-950 transition-all duration-500 ease-in-out">
+            <div class="my-5 mx-3">
+              <div class="w-full flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-5 mb-3">
+                <div class="flex justify-center gap-3">
+                  <p class="flex items-center font-mono text-xs lg:text-sm gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-3 h-3">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <span>Bandung, Indonesia</span>
+                  </p>
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    class="flex items-center font-mono text-xs lg:text-sm gap-1 hover:text-blue-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                    </svg>
+                    <span>Link</span>
+                  </a>
+                </div>
+                <div class="flex justify-center">
+                  <img src="dist/img/experience/djp.jfif" alt="DJP Logo" class="w-16 h-16 object-contain">
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <p class="font-mono text-sm lg:text-lg text-justify mb-3">
+                  Bekerja dengan 3 orang untuk melakukan pengelolaan berkas pajak seperti SPT tahunan, SKP tahunan, serta membangun sebuah website untuk mengetahui posisi/letak berkas disimpan.
+                </p>
               </div>
             </div>
           </div>
