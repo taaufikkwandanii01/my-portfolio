@@ -76,3 +76,19 @@ window.addEventListener("scroll", setActiveSection);
 document.addEventListener("DOMContentLoaded", () => {
   setActiveSection();
 });
+
+// Fungsi buka/tutup accordion
+function toggleAccordion(id) {
+  const content = document.getElementById(id);
+  const icon = document.getElementById(`icon-${id}`);
+
+  if (content.classList.contains('max-h-0')) {
+    content.classList.remove('max-h-0');
+    content.classList.add('max-h-[1000px]');
+    icon.classList.add('rotate-180');
+  } else {
+    content.classList.remove('max-h-[1000px]');
+    content.classList.add('max-h-0');
+    icon.classList.remove('rotate-180');
+  }
+}
