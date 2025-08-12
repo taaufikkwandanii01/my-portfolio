@@ -33,11 +33,6 @@ body {
   @apply -rotate-45;
 }
 
-/* css untuk mengetahui menu yang sedang aktif*/
-.active-menu {
-  @apply text-blue-300;
-}
-
 /* css untuk marquee*/
 @keyframes marquee {
   0% {
