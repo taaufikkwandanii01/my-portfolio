@@ -10,6 +10,50 @@ body {
   color: white;
 }
 
+@keyframes move-horizontal {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+}
+
+.animate-move-horizontal {
+  animation: move-horizontal 6s ease-in-out infinite;
+}
+
+@keyframes move-vertical {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(50px);
+  }
+}
+
+.animate-move-vertical {
+  animation: move-vertical 6s ease-in-out infinite;
+}
+
+@keyframes move-diagonal {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(50px, 50px);
+  }
+}
+
 /* css untuk navbar selalu diatas*/
 .navbar-fixed {
   @apply fixed z-[9999];
@@ -66,11 +110,13 @@ body {
 }
 
 /* css untuk scrollbar hidden*/
-  .hide-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
-  .hide-scrollbar {
-    -ms-overflow-style: none; /* IE & Edge */
-    scrollbar-width: none; /* Firefox */
-  }
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  /* IE & Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
