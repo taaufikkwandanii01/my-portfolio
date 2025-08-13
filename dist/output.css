@@ -484,6 +484,9 @@
   .animate-\[move-vertical_15s_ease-in-out_infinite\] {
     animation: move-vertical 15s ease-in-out infinite;
   }
+  .animate-\[pulse_10s_ease-in-out_infinite\] {
+    animation: pulse 10s ease-in-out infinite;
+  }
   .animate-bounce {
     animation: var(--animate-bounce);
   }
