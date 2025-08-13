@@ -487,6 +487,9 @@
   .animate-\[pulse_10s_ease-in-out_infinite\] {
     animation: pulse 10s ease-in-out infinite;
   }
+  .animate-\[spin_10s_ease-in-out\] {
+    animation: spin 10s ease-in-out;
+  }
   .animate-bounce {
     animation: var(--animate-bounce);
   }
@@ -1437,6 +1440,11 @@ body {
   syntax: "*";
   inherits: false;
   initial-value: 1;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 @keyframes pulse {
   50% {
