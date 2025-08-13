@@ -340,12 +340,6 @@
   .hidden {
     display: none;
   }
-  .inline {
-    display: inline;
-  }
-  .inline-block {
-    display: inline-block;
-  }
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
@@ -855,16 +849,6 @@
       @media (hover: hover) {
         color: var(--color-blue-300);
       }
-    }
-  }
-  .sm\:block {
-    @media (width >= 40rem) {
-      display: block;
-    }
-  }
-  .sm\:hidden {
-    @media (width >= 40rem) {
-      display: none;
     }
   }
   .sm\:inline-block {
