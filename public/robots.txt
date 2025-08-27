@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://taaufikkwandanii01-155.vercel.app/sitemap.xml
