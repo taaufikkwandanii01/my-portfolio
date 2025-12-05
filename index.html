@@ -1,897 +1,1681 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="bD3G_3rRzaI-hCuW8hAa2BHvLFVpafzJGWC6nI-abWE"
+    />
+    <!-- Primary Meta Tags -->
+    <title>Taufik Wandani Portofolio</title>
+    <meta name="title" content="Taufik Wandani Portofolio" />
+    <meta name="description" content="Website Portofolio Taufik Wandani" />
+    <meta
+      name="keywords"
+      content="Taufik Wandani, Portofolio, Informatics Engineering, Web Developer, Frontend Developer"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="bD3G_3rRzaI-hCuW8hAa2BHvLFVpafzJGWC6nI-abWE" />
-  <!-- Primary Meta Tags -->
-  <title>Taufik Wandani Portofolio</title>
-  <meta name="title" content="Taufik Wandani Portofolio" />
-  <meta name="description" content="Website Portofolio Taufik Wandani" />
-  <meta name="keywords"
-    content="Taufik Wandani, Portofolio, Informatics Engineering, Web Developer, Frontend Developer">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://taaufikkwandanii01-155.vercel.app/"
+    />
+    <meta property="og:title" content="Taufik Wandani Portofolio" />
+    <meta
+      property="og:description"
+      content="Website Portofolio Taufik Wandani"
+    />
+    <meta property="og:image" content="dist/img/icon/icon-1.png" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://taaufikkwandanii01-155.vercel.app/" />
-  <meta property="og:title" content="Taufik Wandani Portofolio" />
-  <meta property="og:description" content="Website Portofolio Taufik Wandani" />
-  <meta property="og:image" content="dist/img/icon/icon-1.png" />
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://taaufikkwandanii01-155.vercel.app/"
+    />
+    <meta property="twitter:title" content="Taufik Wandani Portofolio" />
+    <meta
+      property="twitter:description"
+      content="Website Portofolio Taufik Wandani"
+    />
+    <meta property="twitter:image" content="dist/img/icon/icon-1.png" />
 
-  <!-- X (Twitter) -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://taaufikkwandanii01-155.vercel.app/" />
-  <meta property="twitter:title" content="Taufik Wandani Portofolio" />
-  <meta property="twitter:description" content="Website Portofolio Taufik Wandani" />
-  <meta property="twitter:image" content="dist/img/icon/icon-1.png" />
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <link href="dist/output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="dist/img/icon/icon-1.png"
+      type="image/png"
+      sizes="246x166"
+    />
+    <!--aos (animate on scroll)-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  </head>
 
-  <!-- Meta Tags Generated with https://metatags.io -->
-  <link href="dist/output.css" rel="stylesheet">
-  <link rel="icon" href="dist/img/icon/icon-1.png" type="image/png" sizes="246x166">
-  <!--aos (animate on scroll)-->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-</head>
-
-<body>
-  <!-- Header Start -->
-  <header class="w-full fixed top-0 left-0 z-100 px-3 md:px-10 bg-transparent backdrop-blur-lg">
-    <div class="w-full flex items-center justify-between h-20">
-      <div class="flex items-center">
-        <a href="#hero">
-          <img src="dist/img/icon/icon-3.png" alt="Personal Icon" width="150">
-        </a>
-      </div>
-      <div class="flex items-center">
-        <button id="hamburger" name="hamburger" type="button" class="block lg:hidden">
-          <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-          <span class="hamburger-line transition duration-300 ease-in-out"></span>
-          <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
-        </button>
-        <nav id="nav-menu"
-          class="hidden w-full fixed top-full left-0 h-screen bg-blue-950 shadow-lg opacity-0 -translate-y-5 transition-all duration-300 z-50 border-t-2 border-blue-300 lg:border-t-0 lg:static lg:h-auto lg:block lg:bg-transparent lg:shadow-none lg:opacity-100 lg:translate-y-0">
-          <ul class="flex flex-col lg:flex-row items-center py-2 gap-3 lg:gap-6 text-sm lg:text-lg">
-            <li class="group">
-              <a href="#hero" class="font-mono font-bold flex transition duration-300 hover:text-blue-300">hero</a>
-            </li>
-            <li class="group">
-              <a href="#about" class="font-mono font-bold flex transition duration-300 hover:text-blue-300">about-me</a>
-            </li>
-            <li class="group">
-              <a href="#experience"
-                class="font-mono font-bold flex transition duration-300 hover:text-blue-300">experience</a>
-            </li>
-            <li class="group">
-              <a href="#project"
-                class="font-mono font-bold flex transition duration-300 hover:text-blue-300">project</a>
-            </li>
-            <li class="group">
-              <a href="#certificate"
-                class="font-mono font-bold flex transition duration-300 hover:text-blue-300">license
-                & certificate</a>
-            </li>
-            <li class="group">
-              <a href="#resume" class="font-mono font-bold flex transition duration-300 hover:text-blue-300">resume</a>
-            </li>
-            <li class="group">
-              <a href="#contact"
-                class="font-mono font-bold flex transition duration-300 hover:text-blue-300">contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <!-- Header End -->
-
-  <!-- Hero Section -->
-  <section id="hero" class="relative w-full h-[100dvh] flex items-center justify-center px-3 md:px-8">
-    <div class="container">
-      <div class="absolute top-[10%] left-[10%] animate-[move-horizontal_10s_ease-in-out_infinite]">
-        <div class="relative w-72 h-72">
-          <!--glow luar-->
-          <div class="absolute inset-0 rounded-full bg-blue-300/30 blur-[120px] shadow-[0_0_50px_#93c5fd]"></div>
-          <!--glow tengah-->
-          <div class="absolute inset-12 rounded-full bg-blue-300/40 blur-[90px] shadow-[0_0_40px_#93c5fd]"></div>
-          <!--glow inti-->
-          <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-gradient-to-bl from-[#172554] to-[#93c5fd] shadow-[0_0_40px_#93c5fd]">
-          </div>
+  <body>
+    <!-- Header Start -->
+    <header
+      class="w-full fixed top-0 left-0 z-100 px-3 md:px-10 bg-transparent backdrop-blur-lg"
+    >
+      <div class="w-full flex items-center justify-between h-20">
+        <div class="flex items-center">
+          <a href="#hero">
+            <img
+              src="dist/img/icon/icon-3.png"
+              alt="Personal Icon"
+              width="150"
+            />
+          </a>
+        </div>
+        <div class="flex items-center">
+          <button
+            id="hamburger"
+            name="hamburger"
+            type="button"
+            class="block lg:hidden"
+          >
+            <span
+              class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+            ></span>
+            <span
+              class="hamburger-line transition duration-300 ease-in-out"
+            ></span>
+            <span
+              class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+            ></span>
+          </button>
+          <nav
+            id="nav-menu"
+            class="hidden w-full fixed top-full left-0 h-screen bg-blue-950 shadow-lg opacity-0 -translate-y-5 transition-all duration-300 z-50 border-t-2 border-blue-300 lg:border-t-0 lg:static lg:h-auto lg:block lg:bg-transparent lg:shadow-none lg:opacity-100 lg:translate-y-0"
+          >
+            <ul
+              class="flex flex-col lg:flex-row items-center py-2 gap-3 lg:gap-6 text-sm lg:text-lg"
+            >
+              <li class="group">
+                <a
+                  href="#hero"
+                  class="font-mono font-bold flex transition duration-300 hover:text-blue-300"
+                  >hero</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#about"
+                  class="font-mono font-bold flex transition duration-300 hover:text-blue-300"
+                  >about-me</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#experience"
+                  class="font-mono font-bold flex transition duration-300 hover:text-blue-300"
+                  >experience</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#project"
+                  class="font-mono font-bold flex transition duration-300 hover:text-blue-300"
+                  >project</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#certificate"
+                  class="font-mono font-bold flex transition duration-300 hover:text-blue-300"
+                  >license & certificate</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#resume"
+                  class="font-mono font-bold flex transition duration-300 hover:text-blue-300"
+                  >resume</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#contact"
+                  class="font-mono font-bold flex transition duration-300 hover:text-blue-300"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
+    </header>
+    <!-- Header End -->
 
-      <div class="absolute bottom-[10%] right-[10%] animate-[move-vertical_10s_ease-in-out_infinite]">
-        <div class="relative w-72 h-72">
-          <!--glow luar-->
-          <div class="absolute inset-0 rounded-full bg-blue-300/30 blur-[120px] shadow-[0_0_50px_#93c5fd]"></div>
-          <!--glow tengah-->
-          <div class="absolute inset-12 rounded-full bg-blue-300/40 blur-[90px] shadow-[0_0_40px_#93c5fd]"></div>
-          <!--glow inti-->
-          <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-gradient-to-bl from-[#172554] to-[#93c5fd] shadow-[0_0_40px_#93c5fd]">
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="relative w-full h-[100dvh] flex items-center justify-center px-3 md:px-8"
+    >
+      <div class="container">
+        <div
+          class="absolute top-[10%] left-[10%] animate-[move-horizontal_10s_ease-in-out_infinite]"
+        >
+          <div class="relative w-72 h-72">
+            <!--glow luar-->
+            <div
+              class="absolute inset-0 rounded-full bg-blue-300/30 blur-[120px] shadow-[0_0_50px_#93c5fd]"
+            ></div>
+            <!--glow tengah-->
+            <div
+              class="absolute inset-12 rounded-full bg-blue-300/40 blur-[90px] shadow-[0_0_40px_#93c5fd]"
+            ></div>
+            <!--glow inti-->
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-gradient-to-bl from-[#172554] to-[#93c5fd] shadow-[0_0_40px_#93c5fd]"
+            ></div>
           </div>
         </div>
-      </div>
 
-      <div class="absolute top-[10%] right-[25%] animate-[move-vertical_10s_ease-in-out_infinite]">
-        <div class="relative w-72 h-72">
-          <!--glow luar-->
-          <div class="absolute inset-0 rounded-full bg-blue-300/30 blur-[120px] shadow-[0_0_50px_#93c5fd]"></div>
-          <!--glow tengah-->
-          <div class="absolute inset-12 rounded-full bg-blue-300/40 blur-[90px] shadow-[0_0_40px_#93c5fd]"></div>
-          <!--glow inti-->
-          <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-gradient-to-bl from-[#172554] to-[#93c5fd] shadow-[0_0_40px_#93c5fd]">
+        <div
+          class="absolute bottom-[10%] right-[10%] animate-[move-vertical_10s_ease-in-out_infinite]"
+        >
+          <div class="relative w-72 h-72">
+            <!--glow luar-->
+            <div
+              class="absolute inset-0 rounded-full bg-blue-300/30 blur-[120px] shadow-[0_0_50px_#93c5fd]"
+            ></div>
+            <!--glow tengah-->
+            <div
+              class="absolute inset-12 rounded-full bg-blue-300/40 blur-[90px] shadow-[0_0_40px_#93c5fd]"
+            ></div>
+            <!--glow inti-->
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-gradient-to-bl from-[#172554] to-[#93c5fd] shadow-[0_0_40px_#93c5fd]"
+            ></div>
           </div>
         </div>
-      </div>
 
-      <div class="absolute inset-0 flex items-center justify-center z-0">
-        <div class="relative w-[clamp(15rem,25vw,25rem)] aspect-square">
-
-          <!-- Lingkaran blur background -->
-          <div class="absolute inset-0 rounded-full bg-blue-300/30 blur-[150px]"></div>
-
-          <!-- Lingkaran radial utama -->
-          <div class="absolute inset-[5%] rounded-full z-10 bg-radial-[at_25%_25%] from-gray-700 to-zinc-900 to-75%">
+        <div
+          class="absolute top-[10%] right-[25%] animate-[move-vertical_10s_ease-in-out_infinite]"
+        >
+          <div class="relative w-72 h-72">
+            <!--glow luar-->
+            <div
+              class="absolute inset-0 rounded-full bg-blue-300/30 blur-[120px] shadow-[0_0_50px_#93c5fd]"
+            ></div>
+            <!--glow tengah-->
+            <div
+              class="absolute inset-12 rounded-full bg-blue-300/40 blur-[90px] shadow-[0_0_40px_#93c5fd]"
+            ></div>
+            <!--glow inti-->
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-gradient-to-bl from-[#172554] to-[#93c5fd] shadow-[0_0_40px_#93c5fd]"
+            ></div>
           </div>
-
-          <!-- Kotak diagonal kiri atas -->
-          <div
-            class="absolute top-0 left-0 w-[clamp(5rem,10vw,10rem)] aspect-square rounded-lg bg-radial-[at_25%_25%] from-gray-700/30 to-zinc-900 to-75% animate-[spin_10s_ease-in-out]">
-          </div>
-
-          <!-- Lingkaran kanan atas -->
-          <div
-            class="absolute top-0 right-[20%] w-[clamp(3rem,7vw,7rem)] aspect-square rounded-full bg-radial-[at_25%_25%] from-gray-700/30 to-zinc-900 to-75% animate-[move-horizontal_15s_ease-in-out_infinite]">
-          </div>
-
-          <!-- Lingkaran kiri bawah -->
-          <div
-            class="absolute bottom-0 left-0 w-[clamp(4rem,8vw,8rem)] aspect-square rounded-full bg-radial-[at_25%_25%] from-gray-700/30 to-zinc-900 to-75% animate-[move-vertical_15s_ease-in-out_infinite]">
-          </div>
-
-          <!-- Kotak diagonal kanan bawah -->
-          <div
-            class="absolute bottom-0 -right-[10%] w-[clamp(6rem,12vw,12rem)] aspect-square rounded-lg rotate-45 bg-radial-[at_25%_25%] from-gray-700/30 to-zinc-900 to-75% animate-[pulse_10s_ease-in-out_infinite]">
-          </div>
-
-        </div>
-      </div>
-
-      <div class="w-full mx-auto z-10">
-        <div class="flex flex-col items-center justify-center text-center" data-aos="zoom-in" data-aos-duration="2000">
-          <h1 class="font-extrabold text-5xl md:text-7xl lg:text-8xl uppercase">Taufik <span
-              class="hidden sm:inline-block">Wandani</span><span class="inline-block sm:hidden">Wndi</span></h1>
-          <h2 class="font-mono font-bold text-lg md:text-2xl lg:text-3xl text-blue-300 ">Front-End Developer</h2>
         </div>
 
-        <!-- Marquee Skill Icon -->
-        <div class="hidden md:block w-full overflow-hidden mt-20">
-          <div class="relative flex items-center justify-center">
-            <div class="bg-transparent">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
-              </svg>
-            </div>
+        <div class="absolute inset-0 flex items-center justify-center z-0">
+          <div class="relative w-[clamp(15rem,25vw,25rem)] aspect-square">
+            <!-- Lingkaran blur background -->
+            <div
+              class="absolute inset-0 rounded-full bg-blue-300/30 blur-[150px]"
+            ></div>
 
-            <div class="w-full max-w-md overflow-hidden">
-              <div class="flex gap-6 animate-marquee whitespace-nowrap">
-                <img src="dist/img/icon/html.png" alt="HTML Logo" loading="lazy" width="50" height="50"
-                  class="object-contain pointer-events-none">
-                <img src="dist/img/icon/css.png" alt="CSS Logo" loading="lazy" width="50" height="50"
-                  class="object-contain pointer-events-none">
-                <img src="dist/img/icon/bootstrap.png" alt="Bootstrap Logo" loading="lazy" width="50" height="50"
-                  class="object-contain pointer-events-none">
-                <img src="dist/img/icon/tailwindcss.png" alt="Tailwind CSS Logo" loading="lazy" width="50" height="50"
-                  class="object-contain pointer-events-none">
-                <img src="dist/img/icon/php.png" alt="PHP Logo" loading="lazy" width="50" height="50"
-                  class="object-contain pointer-events-none">
-                <img src="dist/img/icon/javascript.png" alt="JavaScript Logo" loading="lazy" width="50" height="50"
-                  class="object-contain pointer-events-none">
-                <img src="dist/img/icon/java.png" alt="Java Logo" loading="lazy" width="50" height="50"
-                  class="object-contain pointer-events-none">
-                <img src="dist/img/icon/mysql.png" alt="MySql Logo" loading="lazy" width="50" height="50"
-                  class="object-contain pointer-events-none">
-                <img src="dist/img/icon/firebase.png" alt="Firebase Logo" loading="lazy" width="50" height="50"
-                  class="object-contain pointer-events-none">
-                <img src="dist/img/icon/vscode.png" alt="VS Code Logo" loading="lazy" width="50" height="50"
-                  class="object-contain pointer-events-none">
-                <img src="dist/img/icon/andstudio.png" alt="Android Studio Logo" loading="lazy" width="50" height="50"
-                  class="object-contain pointer-events-none">
-                <img src="dist/img/icon/github.png" alt="Github Logo" loading="lazy" width="50" height="50"
-                  class="object-contain pointer-events-none">
+            <!-- Lingkaran radial utama -->
+            <div
+              class="absolute inset-[5%] rounded-full z-10 bg-radial-[at_25%_25%] from-gray-700 to-zinc-900 to-75%"
+            ></div>
+
+            <!-- Kotak diagonal kiri atas -->
+            <div
+              class="absolute top-0 left-0 w-[clamp(5rem,10vw,10rem)] aspect-square rounded-lg bg-radial-[at_25%_25%] from-gray-700/30 to-zinc-900 to-75% animate-[spin_10s_ease-in-out]"
+            ></div>
+
+            <!-- Lingkaran kanan atas -->
+            <div
+              class="absolute top-0 right-[20%] w-[clamp(3rem,7vw,7rem)] aspect-square rounded-full bg-radial-[at_25%_25%] from-gray-700/30 to-zinc-900 to-75% animate-[move-horizontal_15s_ease-in-out_infinite]"
+            ></div>
+
+            <!-- Lingkaran kiri bawah -->
+            <div
+              class="absolute bottom-0 left-0 w-[clamp(4rem,8vw,8rem)] aspect-square rounded-full bg-radial-[at_25%_25%] from-gray-700/30 to-zinc-900 to-75% animate-[move-vertical_15s_ease-in-out_infinite]"
+            ></div>
+
+            <!-- Kotak diagonal kanan bawah -->
+            <div
+              class="absolute bottom-0 -right-[10%] w-[clamp(6rem,12vw,12rem)] aspect-square rounded-lg rotate-45 bg-radial-[at_25%_25%] from-gray-700/30 to-zinc-900 to-75% animate-[pulse_10s_ease-in-out_infinite]"
+            ></div>
+          </div>
+        </div>
+
+        <div class="w-full mx-auto z-10">
+          <div
+            class="flex flex-col items-center justify-center text-center"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
+            <h1
+              class="font-extrabold text-5xl md:text-7xl lg:text-8xl uppercase"
+            >
+              Taufik <span class="hidden sm:inline-block">Wandani</span
+              ><span class="inline-block sm:hidden">Wndi</span>
+            </h1>
+            <h2
+              class="font-mono font-bold text-lg md:text-2xl lg:text-3xl text-blue-300"
+            >
+              Undergraduate Informatics Engineering
+            </h2>
+          </div>
+
+          <!-- Marquee Skill Icon -->
+          <div class="hidden md:block w-full overflow-hidden mt-20">
+            <div class="relative flex items-center justify-center">
+              <div class="bg-transparent">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5"
+                  />
+                </svg>
               </div>
-            </div>
 
-            <div class="bg-transparent">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="absolute bottom-5 left-1/2 -translate-x-1/2 z-50">
-        <a href="#about" class="group">
-          <div
-            class="w-10 h-20 flex flex-col items-center justify-end rounded-full shadow-[0_0_10px_#93c5fd] border-2 border-blue-300">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="size-7 text-blue-300 animate-bounce">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
-            </svg>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- Hero Section End -->
-
-  <!-- About Section -->
-  <section id="about" class="w-full min-h-screen flex items-center py-10 pt-20 px-3 md:px-8 bg-blue-950">
-    <div class="w-full">
-      <div class="flex flex-col md:flex-row justify-evenly gap-5">
-        <div class="flex flex-col items-start md:w-2/3" data-aos="fade-right" data-aos-duration="1000">
-          <h1 class="font-extrabold text-2xl md:text-5xl lg:text-6xl">TAUFIK WANDANI</h1>
-          <h2 class="font-extrabold text-base md:text-lg mb-3">Informatics Engineering Graduate</h2>
-          <p class="text-sm md:text-base lg:text-lg text-justify mb-2">
-            Saya adalah lulusan Teknik Informatika dari Universitas Komputer Indonesia. Saya memiliki keterampilan dalam
-            pengembangan Perangkat Lunak maupun Perangkat Keras. Dalam pengembangan perangkat lunak, saya memiliki
-            pengalaman dalam membangun sebuah web application dan mobile application yang telah memperkuat keterampilan
-            teknis saya. Sedangkan dalam keterampilan perangkat keras, saya memiliki pemahaman mengenai perakitan,
-            troubleshooting, serta pemeliharaan sistem komputer yang mendukung kinerja perangkat. Dengan latar belakang
-            tersebut,
-            saya bertujuan untuk berkontribusi secara profesional di Industri Teknologi sekaligus terus meningkatkan dan
-            mengembangkan keterampilan saya.
-          </p>
-        </div>
-        <div class="flex items-center justify-center">
-          <img src="dist/img/icon/icon-1.png" alt="Personal Icon"
-            class="w-[260px] h-[260px] object-cover rounded-full shadow-[0_0_40px_#93c5fd]">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- About Section End -->
-
-  <!-- Experience Section-->
-  <section id="experience" class="w-full flex flex-col items-center py-20 px-3 md:px-8">
-    <div class="container">
-      <h2 class="text-5xl font-bold text-center mb-10">Experience</h2>
-
-      <div class="w-full max-w-4xl mx-auto">
-        <!-- Accordion -->
-        <div class="rounded-xl overflow-hidden mb-5">
-          <button class="w-full cursor-pointer bg-blue-800 hover:bg-blue-900 transition-colors"
-            onclick="toggleAccordion('accordion1')">
-            <div class="flex md:flex-row items-center justify-between my-5 mx-3">
-              <div class="w-full flex flex-col items-start md:flex-row md:items-center md:justify-between">
-                <p class="font-mono font-bold text-sm lg:text-xl text-left">Web Developer (Magang) @ PT Dirgantara
-                  Indonesia</p>
-                <p class="font-mono text-sm lg:text-sm">Sep 2023 - Okt 2023</p>
+              <div class="w-full max-w-md overflow-hidden">
+                <div class="flex gap-6 animate-marquee whitespace-nowrap">
+                  <img
+                    src="dist/img/icon/html.png"
+                    alt="HTML Logo"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                    class="object-contain pointer-events-none"
+                  />
+                  <img
+                    src="dist/img/icon/css.png"
+                    alt="CSS Logo"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                    class="object-contain pointer-events-none"
+                  />
+                  <img
+                    src="dist/img/icon/bootstrap.png"
+                    alt="Bootstrap Logo"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                    class="object-contain pointer-events-none"
+                  />
+                  <img
+                    src="dist/img/icon/tailwindcss.png"
+                    alt="Tailwind CSS Logo"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                    class="object-contain pointer-events-none"
+                  />
+                  <img
+                    src="dist/img/icon/php.png"
+                    alt="PHP Logo"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                    class="object-contain pointer-events-none"
+                  />
+                  <img
+                    src="dist/img/icon/javascript.png"
+                    alt="JavaScript Logo"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                    class="object-contain pointer-events-none"
+                  />
+                  <img
+                    src="dist/img/icon/java.png"
+                    alt="Java Logo"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                    class="object-contain pointer-events-none"
+                  />
+                  <img
+                    src="dist/img/icon/mysql.png"
+                    alt="MySql Logo"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                    class="object-contain pointer-events-none"
+                  />
+                  <img
+                    src="dist/img/icon/firebase.png"
+                    alt="Firebase Logo"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                    class="object-contain pointer-events-none"
+                  />
+                  <img
+                    src="dist/img/icon/vscode.png"
+                    alt="VS Code Logo"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                    class="object-contain pointer-events-none"
+                  />
+                  <img
+                    src="dist/img/icon/andstudio.png"
+                    alt="Android Studio Logo"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                    class="object-contain pointer-events-none"
+                  />
+                  <img
+                    src="dist/img/icon/github.png"
+                    alt="Github Logo"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                    class="object-contain pointer-events-none"
+                  />
+                </div>
               </div>
-              <div class="flex items-center">
-                <svg id="icon-accordion1" xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 transform transition-transform duration-300 animate-pulse" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+
+              <div class="bg-transparent">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                  />
                 </svg>
               </div>
             </div>
-          </button>
-          <div id="accordion1"
-            class="accordion-content max-h-0 overflow-hidden bg-blue-950 transition-all duration-500 ease-in-out">
-            <div class="my-5 mx-3">
-              <div class="w-full flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-5 mb-3">
-                <div class="flex justify-center gap-3">
-                  <p class="flex items-center font-sans text-xs lg:text-sm gap-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                      stroke="currentColor" class="w-3 h-3">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                    </svg>
-                    <span>Bandung, Indonesia</span>
-                  </p>
-                  <a href="https://www.indonesian-aerospace.com/en/" target="_blank" rel="noopener noreferrer"
-                    class="flex items-center font-sans text-xs lg:text-sm gap-1 hover:text-blue-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24"
-                      stroke-width="1.5" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
-                    </svg>
-                    <span>Link</span>
-                  </a>
-                </div>
-                <div class="flex justify-center">
-                  <img src="dist/img/experience/ptdi.png" alt="PTDI Logo" class="w-16 h-16 object-contain">
-                </div>
-              </div>
-              <div class="flex flex-col">
-                <p class="font-sans text-sm lg:text-lg text-justify mb-3">
-                  Selama program magang, saya bekerja bersama tim yang terdiri dari lima orang dalam membangun web
-                  application bernama SkillMatriks, yang bertujuan membantu manajer di divisi aircraft dalam mengelola
-                  data karyawan dan memantau masa kedaluwarsa sertifikasi profesi. Saya bertanggung jawab merancang dan
-                  mengembangkan sistem informasi, terutama fitur utama seperti kelola data karyawan (tambah, edit,
-                  hapus, dan pencarian), serta monitoring sertifikasi. Tantangan terbesar yang saya hadapi adalah
-                  membangun fitur pengingat otomatis untuk karyawan yang sertifikasinya telah kedaluwarsa. Untuk
-                  mengatasi hal ini, saya menggunakan PHPMailer guna mengirim email secara otomatis kepada karyawan
-                  terkait.
-                </p>
-                <p class="font-sans text-sm lg:text-lg text-justify mb-3">
-                  Hasil dari proyek ini adalah berhasilnya pengembangan aplikasi SkillMatriks, yang mendapatkan skor
-                  100% pada pengujian beta terkait kemudahan monitoring dan efektivitas notifikasi. Selama magang, saya
-                  juga aktif berkomunikasi dengan tim dan manajer, yang memperkaya pemahaman saya terhadap kebutuhan
-                  pengguna dan pentingnya kolaborasi. Pengalaman ini memberikan pelajaran berharga mengenai peran
-                  teknologi dalam meningkatkan efisiensi operasional, serta pentingnya komunikasi dalam pengembangan
-                  perangkat lunak.
-                </p>
-              </div>
-              <div class="flex flex-wrap items-center justify-center gap-2">
-                <span class="font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Web Developer</span>
-                <span class="font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Front-End
-                  Developer</span>
-                <span class="font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Back-End Web
-                  Developer</span>
-              </div>
-            </div>
           </div>
         </div>
 
-        <!-- Accordion -->
-        <div class="rounded-xl overflow-hidden mb-5">
-          <button class="w-full cursor-pointer bg-blue-800 hover:bg-blue-900 transition-colors"
-            onclick="toggleAccordion('accordion2')">
-            <div class="flex md:flex-row items-center justify-between my-5 mx-3">
-              <div class="w-full flex flex-col items-start md:flex-row md:items-center md:justify-between">
-                <p class="font-mono font-bold text-sm lg:text-xl text-left">Pengarsipan (Magang) @ KPP Pratama Bandung
-                  Karees</p>
-                <p class="font-mono text-sm lg:text-sm">Ags 2019 - Okt 2019</p>
-              </div>
-              <div class="flex items-center">
-                <svg id="icon-accordion2" xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 transform transition-transform duration-300 animate-pulse" fill="none"
-                  viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
+        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 z-50">
+          <a href="#about" class="group">
+            <div
+              class="w-10 h-20 flex flex-col items-center justify-end rounded-full shadow-[0_0_10px_#93c5fd] border-2 border-blue-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-7 text-blue-300 animate-bounce"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+                />
+              </svg>
             </div>
-          </button>
-          <div id="accordion2"
-            class="accordion-content max-h-0 overflow-hidden bg-blue-950 transition-all duration-500 ease-in-out">
-            <div class="my-5 mx-3">
-              <div class="w-full flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-5 mb-3">
-                <div class="flex justify-center gap-3">
-                  <p class="flex items-center font-sans text-xs lg:text-sm gap-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                      stroke="currentColor" class="w-3 h-3">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                    </svg>
-                    <span>Bandung, Indonesia</span>
-                  </p>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
-                    class="flex items-center font-sans text-xs lg:text-sm gap-1 hover:text-blue-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24"
-                      stroke-width="1.5" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
-                    </svg>
-                    <span>Link</span>
-                  </a>
-                </div>
-                <div class="flex justify-center">
-                  <img src="dist/img/experience/djp.jfif" alt="DJP Logo" class="w-16 h-16 object-contain">
-                </div>
-              </div>
-              <div class="flex flex-col">
-                <p class="font-sans text-sm lg:text-lg text-justify mb-3">
-                  Bekerja dengan 3 orang untuk melakukan pengelolaan berkas pajak seperti SPT tahunan, SKP tahunan,
-                  serta membangun sebuah website untuk mengetahui posisi/letak berkas disimpan.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- Experience Section End-->
-
-  <!-- Project Section-->
-  <section id="project" class="w-full flex flex-col items-center py-20 px-3 md:px-8">
-    <div class="w-full">
-      <div class="flex flex-col md:flex-row gap-5 pb-20">
-        <div class="flex flex-col items-center justify-center md:w-1/2" data-aos="fade-up" data-aos-duration="1000">
-          <div class="flex flex-col text-center md:text-left">
-            <h1 class="text-5xl lg:text-8xl font-extrabold">AwayDay</h1>
-            <p class="font-mono text-sm md:text-lg my-3">
-              Membangun sebuah sistem mobile application yang digunakan oleh suporter dalam melakukan monitoring perjalanan AwayDay-nya. Fitur-fitur yang terdapat dalam sistem ini adalah: Fitur menampilkan maps anggota rombongan, notifikasi anggota yang tertinggal, dan juga informasi kontak mengenai anggota yang tertinggal.
-            </p>
-          </div>
-          <div class="w-full flex items-center justify-center">
-            <div class="flex flex-row overflow-x-auto hide-scrollbar gap-2">
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Java</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Google
-                Maps
-                API</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">OneSignal
-                API</span>
-              <span
-                class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Firebase</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Firebase
-                Authentication</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Firebase
-                Real-time
-                Database</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">HTML</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">CSS
-                (Cascading Style Sheets)</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Bootstrap</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">PHP</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Android
-                Studio</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Visual
-                Studio
-                Code</span>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-center md:w-1/2">
-          <div class="flex overflow-x-auto hide-scrollbar gap-2">
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/awayday-apk/01.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
-                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/awayday-apk/02.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
-                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/awayday-apk/03.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
-                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/awayday-apk/04.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
-                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/awayday-apk/05.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
-                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/awayday-apk/06.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
-                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/awayday-apk/07.png" alt="AwayDay screenshot" loading="lazy" decoding="async"
-                data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top" style="color:transparent">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/awayday-apk/01-web.png" alt="AwayDay screenshot" loading="lazy" width="200"
-                height="225" decoding="async" data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/awayday-apk/02-web.png" alt="AwayDay screenshot" loading="lazy" width="200"
-                height="225" decoding="async" data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/awayday-apk/03-web.png" alt="AwayDay screenshot" loading="lazy" width="200"
-                height="225" decoding="async" data-nimg="1" class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col md:flex-row-reverse gap-5 pb-20">
-        <div class="flex flex-col items-center justify-center md:w-1/2" data-aos="fade-up" data-aos-duration="1000">
-          <div class="flex flex-col text-center md:text-right">
-            <h1 class="text-5xl lg:text-8xl font-extrabold">Skill Matriks</h1>
-            <p class="font-mono text-sm md:text-lg my-3">
-              Membangun sebuah sistem web application SKillMatriks yang digunakan untuk pengelolaan data pegawai di divisi aircraft PT. Dirgantara Indonesia (PTDI). Selain itu, terdapat juga fitur monitoring masa kadaluwarsa sertifikasi keterampilan pegawai.
-            </p>
-          </div>
-          <div class="w-full flex items-center justify-center">
-            <div class="flex flex-row overflow-x-auto hide-scrollbar gap-2">
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">HTML</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">CSS
-                (Cascading Style Sheets)</span>
-              <span
-                class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Bootstrap</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">PHP</span>
-              <span
-                class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">JavaScript</span>
-              <span
-                class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">MySql</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Visual
-                Studio
-                Code</span>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-center md:w-1/2">
-          <div class="flex overflow-x-auto hide-scrollbar gap-2">
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/skillmatriks-webapp/01.png" alt="SkillMatriks screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/skillmatriks-webapp/02.png" alt="SkillMatriks screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/skillmatriks-webapp/03.png" alt="SkillMatriks screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/skillmatriks-webapp/04.png" alt="SkillMatriks screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/skillmatriks-webapp/05.png" alt="SkillMatriks screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/skillmatriks-webapp/06.png" alt="SkillMatriks screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/skillmatriks-webapp/07.png" alt="SkillMatriks screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/skillmatriks-webapp/08.png" alt="SkillMatriks screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col md:flex-row gap-5 pb-20">
-        <div class="flex flex-col items-center justify-center md:w-1/2" data-aos="fade-up" data-aos-duration="1000">
-          <div class="flex flex-col text-center md:text-left">
-            <h1 class="text-5xl lg:text-8xl font-extrabold">Landing Page</h1>
-            <p class="font-mono text-sm md:text-lg my-3">
-              Membangun website company profile yang digunakan sebagai media informasi dan promosi mengenai usaha yang dilakukan oleh Alam Jalu Jaya. Data yang ditampilkan pada website ini meliputi jasa/layanan, output serta informasi mengenai kontak perusahaan. <span><a href="https://alamjalujaya.vercel.app/" target="_blank" class="text-blue-300 hover:text-blue-800 transition duration-300">Link</a></span>
-            </p>
-          </div>
-          <div class="w-full flex items-center justify-center">
-            <div class="flex flex-row overflow-x-auto hide-scrollbar gap-2">
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">HTML</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">CSS
-                (Cascading Style Sheets)</span>
-              <span
-                class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Bootstrap</span>
-              <span class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full">Visual
-                Studio
-                Code</span>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-center md:w-1/2">
-          <div class="flex overflow-x-auto hide-scrollbar gap-2">
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/alamjalujaya-website/01.png" alt="Landing Page screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/alamjalujaya-website/02.png" alt="Landing Page screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/alamjalujaya-website/03.png" alt="Landing Page screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/alamjalujaya-website/04.png" alt="Landing Page screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/alamjalujaya-website/05.png" alt="Landing Page screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/alamjalujaya-website/06.png" alt="Landing Page screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/alamjalujaya-website/07.png" alt="Landing Page screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/alamjalujaya-website/08.png" alt="Landing Page screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-            <div class="flex-shrink-0 max-h-[225px]">
-              <img src="dist/img/project/alamjalujaya-website/09.png" alt="Landing Page screenshot" loading="lazy"
-                width="200" height="225" decoding="async" data-nimg="1"
-                class="rounded-lg object-cover max-h-[225px] object-top">
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- Project Section End-->
-
-  <!-- Certificate Section-->
-  <section id="certificate" class="flex items-center justify-center py-20 px-3 md:px-8">
-    <div class="container">
-      <h2 class="text-5xl font-bold text-center mb-10">License & Certificate</h2>
-      <div class="w-full max-w-6xl mx-auto">
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div class="w-full flex flex-col justify-center rounded-xl border-1">
-            <div class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3">
-              <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
-                <div class="flex flex-col items-start">
-                  <p class="font-mono text-lg lg:text-2xl font-extrabold">Junior Web Developer</p>
-                  <p class="font-mono text-sm font-bold text-blue-300">Badan Nasional Sertifikasi Profesi (BNSP)</p>
-                  <p class="font-mono text-sm">Diterbitkan Maret 2025 | Kadaluwarsa Maret 2028</p>
-                </div>
-                <div class="flex items-center justify-center lg:min-w-20">
-                  <img src="dist/img/certificate/icon/bnsp.png" alt="Penerbit Logo"
-                    class="w-16 h-16 object-contain object-center">
-                </div>
-              </div>
-              <div class="flex items-center justify-center lg:border-l-1 lg:min-w-30">
-                <a href="https://bnsp.net/sertifikat-bnsp/junior-web-developer" target="_blank"
-                  rel="noopener noreferrer"
-                  class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3">
-                  Lihat Kredensial
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full flex flex-col justify-center rounded-xl border-1">
-            <div class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3">
-              <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
-                <div class="flex flex-col items-start">
-                  <p class="font-mono text-lg lg:text-2xl font-extrabold">CCNAv7: Introduction to Networks</p>
-                  <p class="font-mono text-sm font-bold text-blue-300">Cisco Networking Academy</p>
-                  <p class="font-mono text-sm">Diterbitkan Mei 2023</p>
-                </div>
-                <div class="flex items-center justify-center lg:min-w-20">
-                  <img src="dist/img/certificate/icon/cisco.png" alt="Penerbit Logo"
-                    class="w-16 h-16 object-contain object-center">
-                </div>
-              </div>
-              <div class="flex items-center justify-center lg:border-l-1 lg:min-w-30">
-                <a href="https://www.netacad.com/courses/ccna-introduction-networks?courseLang=en-US" target="_blank"
-                  rel="noopener noreferrer"
-                  class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3">
-                  Lihat Kredensial
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full flex flex-col justify-center rounded-xl border-1">
-            <div class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3">
-              <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
-                <div class="flex flex-col items-start">
-                  <p class="font-mono text-lg lg:text-2xl font-extrabold">CCNAv7: Switching, Routing, and Wireless
-                    Essentials
-                  </p>
-                  <p class="font-mono text-sm font-bold text-blue-300">Cisco Networking Academy</p>
-                  <p class="font-mono text-sm">Diterbitkan Agustus 2023</p>
-                </div>
-                <div class="flex items-center justify-center lg:min-w-20">
-                  <img src="dist/img/certificate/icon/cisco.png" alt="Penerbit Logo"
-                    class="w-16 h-16 object-contain object-center">
-                </div>
-              </div>
-              <div class="flex items-center justify-center lg:border-l-1 lg:min-w-30">
-                <a href="https://www.netacad.com/courses/ccna-switching-routing-wireless-essentials?courseLang=en-US"
-                  target="_blank" rel="noopener noreferrer"
-                  class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3">
-                  Lihat Kredensial
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full flex flex-col justify-center rounded-xl border-1">
-            <div class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3">
-              <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
-                <div class="flex flex-col items-start">
-                  <p class="font-mono text-lg lg:text-2xl font-extrabold">Belajar Prinsip Pemrograman SOLID</p>
-                  <p class="font-mono text-sm font-bold text-blue-300">Dicoding Indonesia</p>
-                  <p class="font-mono text-sm">Diterbitkan Juni 2025 | Kadaluwarsa Juni 2028</p>
-                </div>
-                <div class="flex items-center justify-center lg:min-w-20">
-                  <img src="dist/img/certificate/icon/dicoding.png" alt="Penerbit Logo"
-                    class="w-16 h-16 object-contain object-center">
-                </div>
-              </div>
-              <div class="flex items-center justify-center lg:border-l-1 lg:min-w-30">
-                <a href="https://www.dicoding.com/certificates/1OP82G8JVPQK" target="_blank" rel="noopener noreferrer"
-                  class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3">
-                  Lihat Kredensial
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full flex flex-col justify-center rounded-xl border-1">
-            <div class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3">
-              <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
-                <div class="flex flex-col items-start">
-                  <p class="font-mono text-lg lg:text-2xl font-extrabold">Membuat Design Website SEO Friendly</p>
-                  <p class="font-mono text-sm font-bold text-blue-300">BISA AI Academy (PT BISA ARTIFISIAL
-                    INDONESIA)
-                  </p>
-                  <p class="font-mono text-sm">Diterbitkan Mei 2024</p>
-                </div>
-                <div class="flex items-center justify-center lg:min-w-20">
-                  <img src="dist/img/certificate/icon/bisa-ai.png" alt="Penerbit Logo"
-                    class="w-16 h-16 object-contain object-center">
-                </div>
-              </div>
-              <div class="flex items-center justify-center lg:border-l-1 lg:min-w-30">
-                <a href="https://bisa.ai/portofolio/detail/NjQzMg" target="_blank" rel="noopener noreferrer"
-                  class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3">
-                  Lihat Kredensial
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full flex flex-col justify-center rounded-xl border-1">
-            <div class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3">
-              <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
-                <div class="flex flex-col items-start">
-                  <p class="font-mono text-lg lg:text-2xl font-extrabold">Figma for UI/UX Design</p>
-                  <p class="font-mono text-sm font-bold text-blue-300">MySkill</p>
-                  <p class="font-mono text-sm">Diterbitkan Juli 2025</p>
-                </div>
-                <div class="flex items-center justify-center lg:min-w-20">
-                  <img src="dist/img/certificate/icon/myskill.png" alt="Penerbit Logo"
-                    class="w-16 h-16 object-contain object-center">
-                </div>
-              </div>
-              <div class="flex items-center justify-center lg:border-l-1 lg:min-w-30">
-                <a href="https://myskill.id/bootcamp/batch/mXsHujCYgbBUKXoZ2gnL" target="_blank"
-                  rel="noopener noreferrer"
-                  class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3">
-                  Lihat Kredensial
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full flex flex-col justify-center rounded-xl border-1">
-            <div class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3">
-              <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
-                <div class="flex flex-col items-start">
-                  <p class="font-mono text-lg lg:text-2xl font-extrabold">Data Science</p>
-                  <p class="font-mono text-sm font-bold text-blue-300">MySkill
-                  </p>
-                  <p class="font-mono text-sm">Diterbitkan Juli 2025</p>
-                </div>
-                <div class="flex items-center justify-center lg:min-w-20">
-                  <img src="dist/img/certificate/icon/myskill.png" alt="Penerbit Logo"
-                    class="w-16 h-16 object-contain object-center">
-                </div>
-              </div>
-              <div class="flex items-center justify-center lg:border-l-1 lg:min-w-30">
-                <a href="https://myskill.id/bootcamp/batch/1vQZUm2hfLkLxQOwNAF9" target="_blank"
-                  rel="noopener noreferrer"
-                  class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3">
-                  Lihat Kredensial
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Certificate Section End-->
-
-  <!-- Resume Section-->
-  <section id="resume" class="w-full min-h-screen flex items-center justify-center py-20 px-3 md:px-8">
-    <div class="container">
-      <h2 class="text-5xl font-bold text-center mb-10">Resume</h2>
-      <div class="w-full flex flex-col">
-        <div class="flex flex-row items-center lg:justify-center overflow-x-auto hide-scrollbar p-5 gap-5">
-          <div class="flex-shrink-0">
-            <img src="dist/img/resume/resuem-hal-1.png" alt="Resume Halaman 1"
-              class="w-full h-auto max-w-xs md:max-w-sm lg:max-w-md rounded-lg shadow-lg object-contain">
-          </div>
-          <div class="flex-shrink-0">
-            <img src="dist/img/resume/resuem-hal-2.png" alt="Resume Halaman 2"
-              class="w-full h-auto max-w-xs md:max-w-sm lg:max-w-md rounded-lg shadow-lg object-contain">
-          </div>
-        </div>
-        <div class="flex items-center justify-center">
-          <a href="dist/img/resume/resume.pdf" target="_blank" download
-            class="flex items-center rounded-3xl border-1 border-blue-300 hover:bg-blue-300 hover:scale-95 transition duration-300 py-2 px-4 gap-2">
-            <span>Download</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" class="w-5 h-5">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12L12 16.5M12 16.5L7.5 12M12 16.5V3" />
-            </svg>
           </a>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Resume Section End-->
+    </section>
+    <!-- Hero Section End -->
 
-  <!-- Contact Section-->
-  <section id="contact" class="w-full flex flex-col items-center py-20 px-3 md:px-8">
-    <div class="w-full max-w-4xl flex flex-col items-center justify-center">
-      <h2 class="text-4xl lg:text-6xl font-bold text-center mb-5">Mempunyai Rencana Membangun Sebuah Proyek?
-        <span class="block">Saya Terbuka Untuk Berkolaborasi</span>
-      </h2>
-      <p class="font-sans text-lg md:text-2xl text-center mb-3">
-        Saya terbuka untuk berbagai kolaborasi. Baik itu dalam pekerjaan purna waktu (full-time) untuk sebuah tim,
-        atau pekerja paruh waktu (part-time) untuk mengerjakan proyek tertentu. Saya akan senang mendengarnya.
-      </p>
-      <p class="font-sans text-lg md:text-2xl text-center mb-8">Kotak masuk saya selalu terbuka. Mari kita
-        diskusikan bagaimana kita bisa menciptakan sesuatu yang luar biasa bersama-sama.</p>
-      <div class="flex flex-col lg:flex-row items-center gap-6 md:gap-8">
-        <a target="_blank" rel="noopener noreferrer" aria-label="Gmail"
-          class="font-mono text-lg md:text-2xl underline hover:scale-105 transition duration-150 hover:text-blue-300"
-          href="mailto:taaufikkwandanii01@gmail.com">Gmail</a>
-        <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
-          class="font-mono text-lg md:text-2xl underline hover:scale-105 transition duration-150 hover:text-blue-300"
-          href="https://www.linkedin.com/in/taufikwandani/">LinkedIn</a>
-        <a target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-          class="font-mono text-lg md:text-2xl underline hover:scale-105 transition duration-150 hover:text-blue-300"
-          href="https://github.com/taaufikkwandanii01">GitHub</a>
+    <!-- About Section -->
+    <section
+      id="about"
+      class="w-full min-h-screen flex items-center py-10 pt-20 px-3 md:px-8 bg-blue-950"
+    >
+      <div class="w-full">
+        <div class="flex flex-col md:flex-row justify-evenly gap-5">
+          <div
+            class="flex flex-col items-start md:w-2/3"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h1 class="font-extrabold text-2xl md:text-5xl lg:text-6xl">
+              TAUFIK WANDANI
+            </h1>
+            <h2 class="font-extrabold text-base md:text-lg mb-3">
+              Undergraduate Informatics Engineering
+            </h2>
+            <p class="text-sm md:text-base lg:text-lg text-justify mb-2">
+              Saya adalah lulusan Teknik Informatika dari Universitas Komputer
+              Indonesia. Saya memiliki keterampilan dalam pengembangan Perangkat
+              Lunak maupun Perangkat Keras. Dalam pengembangan perangkat lunak,
+              saya memiliki pengalaman dalam membangun sebuah web application
+              dan mobile application yang telah memperkuat keterampilan teknis
+              saya. Sedangkan dalam keterampilan perangkat keras, saya memiliki
+              pemahaman mengenai perakitan, troubleshooting, serta pemeliharaan
+              sistem komputer yang mendukung kinerja perangkat. Dengan latar
+              belakang tersebut, saya bertujuan untuk berkontribusi secara
+              profesional di Industri Teknologi sekaligus terus meningkatkan dan
+              mengembangkan keterampilan saya.
+            </p>
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              src="dist/img/icon/icon-1.png"
+              alt="Personal Icon"
+              class="w-[260px] h-[260px] object-cover rounded-full shadow-[0_0_40px_#93c5fd]"
+            />
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- Contact Section End-->
+    </section>
+    <!-- About Section End -->
 
-  <!--Footer-->
-  <footer class="pt-10 px-3 md:px-8">
-    <div class="w-full flex items-center justify-center border-x border-t border-slate-700 py-5">
-      <a href="#hero" class="font-mono font-semibold text-sm text-slate-600 animate-pulse">
-        <span>&copy; 2025 Taufik Wandani</span>
-      </a>
-    </div>
-  </footer>
-  <!--Footer End-->
+    <!-- Experience Section-->
+    <section
+      id="experience"
+      class="w-full flex flex-col items-center py-20 px-3 md:px-8"
+    >
+      <div class="container">
+        <h2 class="text-5xl font-bold text-center mb-10">Experience</h2>
 
-  <script src="dist/js/script.js"></script>
-  <!--aos (animate on scroll)-->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <!--aos (animate on scroll) end-->
+        <div class="w-full max-w-4xl mx-auto">
+          <!-- Accordion -->
+          <div class="rounded-xl overflow-hidden mb-5">
+            <button
+              class="w-full cursor-pointer bg-blue-800 hover:bg-blue-900 transition-colors"
+              onclick="toggleAccordion('accordion1')"
+            >
+              <div
+                class="flex md:flex-row items-center justify-between my-5 mx-3"
+              >
+                <div
+                  class="w-full flex flex-col items-start md:flex-row md:items-center md:justify-between"
+                >
+                  <p class="font-mono font-bold text-sm lg:text-xl text-left">
+                    Web Developer (Magang) @ PT Dirgantara Indonesia
+                  </p>
+                  <p class="font-mono text-sm lg:text-sm">
+                    Sep 2023 - Okt 2023
+                  </p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    id="icon-accordion1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 transform transition-transform duration-300 animate-pulse"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+            <div
+              id="accordion1"
+              class="accordion-content max-h-0 overflow-hidden bg-blue-950 transition-all duration-500 ease-in-out"
+            >
+              <div class="my-5 mx-3">
+                <div
+                  class="w-full flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-5 mb-3"
+                >
+                  <div class="flex justify-center gap-3">
+                    <p
+                      class="flex items-center font-sans text-xs lg:text-sm gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-3 h-3"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                        />
+                      </svg>
+                      <span>Bandung, Indonesia</span>
+                    </p>
+                    <a
+                      href="https://www.indonesian-aerospace.com/en/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex items-center font-sans text-xs lg:text-sm gap-1 hover:text-blue-300"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-3 h-3"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                        />
+                      </svg>
+                      <span>Link</span>
+                    </a>
+                  </div>
+                  <div class="flex justify-center">
+                    <img
+                      src="dist/img/experience/ptdi.png"
+                      alt="PTDI Logo"
+                      class="w-16 h-16 object-contain"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <p class="font-sans text-sm lg:text-lg text-justify mb-3">
+                    Selama program magang, saya bekerja bersama tim yang terdiri
+                    dari lima orang dalam membangun web application bernama
+                    SkillMatriks, yang bertujuan membantu manajer di divisi
+                    aircraft dalam mengelola data karyawan dan memantau masa
+                    kedaluwarsa sertifikasi profesi. Saya bertanggung jawab
+                    merancang dan mengembangkan sistem informasi, terutama fitur
+                    utama seperti kelola data karyawan (tambah, edit, hapus, dan
+                    pencarian), serta monitoring sertifikasi. Tantangan terbesar
+                    yang saya hadapi adalah membangun fitur pengingat otomatis
+                    untuk karyawan yang sertifikasinya telah kedaluwarsa. Untuk
+                    mengatasi hal ini, saya menggunakan PHPMailer guna mengirim
+                    email secara otomatis kepada karyawan terkait.
+                  </p>
+                  <p class="font-sans text-sm lg:text-lg text-justify mb-3">
+                    Hasil dari proyek ini adalah berhasilnya pengembangan
+                    aplikasi SkillMatriks, yang mendapatkan skor 100% pada
+                    pengujian beta terkait kemudahan monitoring dan efektivitas
+                    notifikasi. Selama magang, saya juga aktif berkomunikasi
+                    dengan tim dan manajer, yang memperkaya pemahaman saya
+                    terhadap kebutuhan pengguna dan pentingnya kolaborasi.
+                    Pengalaman ini memberikan pelajaran berharga mengenai peran
+                    teknologi dalam meningkatkan efisiensi operasional, serta
+                    pentingnya komunikasi dalam pengembangan perangkat lunak.
+                  </p>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-2">
+                  <span
+                    class="font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                    >Web Developer</span
+                  >
+                  <span
+                    class="font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                    >Front-End Developer</span
+                  >
+                  <span
+                    class="font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                    >Back-End Web Developer</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
 
-</body>
+          <!-- Accordion -->
+          <div class="rounded-xl overflow-hidden mb-5">
+            <button
+              class="w-full cursor-pointer bg-blue-800 hover:bg-blue-900 transition-colors"
+              onclick="toggleAccordion('accordion2')"
+            >
+              <div
+                class="flex md:flex-row items-center justify-between my-5 mx-3"
+              >
+                <div
+                  class="w-full flex flex-col items-start md:flex-row md:items-center md:justify-between"
+                >
+                  <p class="font-mono font-bold text-sm lg:text-xl text-left">
+                    Pengarsipan (Magang) @ KPP Pratama Bandung Karees
+                  </p>
+                  <p class="font-mono text-sm lg:text-sm">
+                    Ags 2019 - Okt 2019
+                  </p>
+                </div>
+                <div class="flex items-center">
+                  <svg
+                    id="icon-accordion2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 transform transition-transform duration-300 animate-pulse"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+            <div
+              id="accordion2"
+              class="accordion-content max-h-0 overflow-hidden bg-blue-950 transition-all duration-500 ease-in-out"
+            >
+              <div class="my-5 mx-3">
+                <div
+                  class="w-full flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-5 mb-3"
+                >
+                  <div class="flex justify-center gap-3">
+                    <p
+                      class="flex items-center font-sans text-xs lg:text-sm gap-1"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-3 h-3"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                        />
+                      </svg>
+                      <span>Bandung, Indonesia</span>
+                    </p>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex items-center font-sans text-xs lg:text-sm gap-1 hover:text-blue-300"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-3 h-3"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                        />
+                      </svg>
+                      <span>Link</span>
+                    </a>
+                  </div>
+                  <div class="flex justify-center">
+                    <img
+                      src="dist/img/experience/djp.jfif"
+                      alt="DJP Logo"
+                      class="w-16 h-16 object-contain"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <p class="font-sans text-sm lg:text-lg text-justify mb-3">
+                    Bekerja dengan 3 orang untuk melakukan pengelolaan berkas
+                    pajak seperti SPT tahunan, SKP tahunan, serta membangun
+                    sebuah website untuk mengetahui posisi/letak berkas
+                    disimpan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience Section End-->
 
+    <!-- Project Section-->
+    <section
+      id="project"
+      class="w-full flex flex-col items-center py-20 px-3 md:px-8"
+    >
+      <div class="w-full">
+        <div class="flex flex-col md:flex-row gap-5 pb-20">
+          <div
+            class="flex flex-col items-center justify-center md:w-1/2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="flex flex-col text-center md:text-left">
+              <h1 class="text-5xl lg:text-8xl font-extrabold">AwayDay</h1>
+              <p class="font-mono text-sm md:text-lg my-3">
+                Membangun sebuah sistem mobile application yang digunakan oleh
+                suporter dalam melakukan monitoring perjalanan AwayDay-nya.
+                Fitur-fitur yang terdapat dalam sistem ini adalah: Fitur
+                menampilkan maps anggota rombongan, notifikasi anggota yang
+                tertinggal, dan juga informasi kontak mengenai anggota yang
+                tertinggal.
+              </p>
+            </div>
+            <div class="w-full flex items-center justify-center">
+              <div class="flex flex-row overflow-x-auto hide-scrollbar gap-2">
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >Java</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >Google Maps API</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >OneSignal API</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >Firebase</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >Firebase Authentication</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >Firebase Real-time Database</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >HTML</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >CSS (Cascading Style Sheets)</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >Bootstrap</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >PHP</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >Android Studio</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >Visual Studio Code</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center md:w-1/2">
+            <div class="flex overflow-x-auto hide-scrollbar gap-2">
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/awayday-apk/01.png"
+                  alt="AwayDay screenshot"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                  style="color: transparent"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/awayday-apk/02.png"
+                  alt="AwayDay screenshot"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                  style="color: transparent"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/awayday-apk/03.png"
+                  alt="AwayDay screenshot"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                  style="color: transparent"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/awayday-apk/04.png"
+                  alt="AwayDay screenshot"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                  style="color: transparent"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/awayday-apk/05.png"
+                  alt="AwayDay screenshot"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                  style="color: transparent"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/awayday-apk/06.png"
+                  alt="AwayDay screenshot"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                  style="color: transparent"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/awayday-apk/07.png"
+                  alt="AwayDay screenshot"
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                  style="color: transparent"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/awayday-apk/01-web.png"
+                  alt="AwayDay screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/awayday-apk/02-web.png"
+                  alt="AwayDay screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/awayday-apk/03-web.png"
+                  alt="AwayDay screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse gap-5 pb-20">
+          <div
+            class="flex flex-col items-center justify-center md:w-1/2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="flex flex-col text-center md:text-right">
+              <h1 class="text-5xl lg:text-8xl font-extrabold">Skill Matriks</h1>
+              <p class="font-mono text-sm md:text-lg my-3">
+                Membangun sebuah sistem web application SKillMatriks yang
+                digunakan untuk pengelolaan data pegawai di divisi aircraft PT.
+                Dirgantara Indonesia (PTDI). Selain itu, terdapat juga fitur
+                monitoring masa kadaluwarsa sertifikasi keterampilan pegawai.
+              </p>
+            </div>
+            <div class="w-full flex items-center justify-center">
+              <div class="flex flex-row overflow-x-auto hide-scrollbar gap-2">
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >HTML</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >CSS (Cascading Style Sheets)</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >Bootstrap</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >PHP</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >JavaScript</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >MySql</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >Visual Studio Code</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center md:w-1/2">
+            <div class="flex overflow-x-auto hide-scrollbar gap-2">
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/skillmatriks-webapp/01.png"
+                  alt="SkillMatriks screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/skillmatriks-webapp/02.png"
+                  alt="SkillMatriks screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/skillmatriks-webapp/03.png"
+                  alt="SkillMatriks screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/skillmatriks-webapp/04.png"
+                  alt="SkillMatriks screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/skillmatriks-webapp/05.png"
+                  alt="SkillMatriks screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/skillmatriks-webapp/06.png"
+                  alt="SkillMatriks screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/skillmatriks-webapp/07.png"
+                  alt="SkillMatriks screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/skillmatriks-webapp/08.png"
+                  alt="SkillMatriks screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-5 pb-20">
+          <div
+            class="flex flex-col items-center justify-center md:w-1/2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="flex flex-col text-center md:text-left">
+              <h1 class="text-5xl lg:text-8xl font-extrabold">Landing Page</h1>
+              <p class="font-mono text-sm md:text-lg my-3">
+                Membangun website company profile yang digunakan sebagai media
+                informasi dan promosi mengenai usaha yang dilakukan oleh Alam
+                Jalu Jaya. Data yang ditampilkan pada website ini meliputi
+                jasa/layanan, output serta informasi mengenai kontak perusahaan.
+                <span
+                  ><a
+                    href="https://alamjalujaya.vercel.app/"
+                    target="_blank"
+                    class="text-blue-300 hover:text-blue-800 transition duration-300"
+                    >Link</a
+                  ></span
+                >
+              </p>
+            </div>
+            <div class="w-full flex items-center justify-center">
+              <div class="flex flex-row overflow-x-auto hide-scrollbar gap-2">
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >HTML</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >CSS (Cascading Style Sheets)</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >Bootstrap</span
+                >
+                <span
+                  class="flex-shrink-0 font-sans px-3 py-1 bg-blue-300/20 text-xs lg:text-sm rounded-full"
+                  >Visual Studio Code</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center md:w-1/2">
+            <div class="flex overflow-x-auto hide-scrollbar gap-2">
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/alamjalujaya-website/01.png"
+                  alt="Landing Page screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/alamjalujaya-website/02.png"
+                  alt="Landing Page screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/alamjalujaya-website/03.png"
+                  alt="Landing Page screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/alamjalujaya-website/04.png"
+                  alt="Landing Page screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/alamjalujaya-website/05.png"
+                  alt="Landing Page screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/alamjalujaya-website/06.png"
+                  alt="Landing Page screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/alamjalujaya-website/07.png"
+                  alt="Landing Page screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/alamjalujaya-website/08.png"
+                  alt="Landing Page screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+              <div class="flex-shrink-0 max-h-[225px]">
+                <img
+                  src="dist/img/project/alamjalujaya-website/09.png"
+                  alt="Landing Page screenshot"
+                  loading="lazy"
+                  width="200"
+                  height="225"
+                  decoding="async"
+                  data-nimg="1"
+                  class="rounded-lg object-cover max-h-[225px] object-top"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project Section End-->
+
+    <!-- Certificate Section-->
+    <section
+      id="certificate"
+      class="flex items-center justify-center py-20 px-3 md:px-8"
+    >
+      <div class="container">
+        <h2 class="text-5xl font-bold text-center mb-10">
+          License & Certificate
+        </h2>
+        <div class="w-full max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div
+              class="w-full flex flex-col justify-center rounded-xl border-1"
+            >
+              <div
+                class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3"
+              >
+                <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
+                  <div class="flex flex-col items-start">
+                    <p class="font-mono text-lg lg:text-2xl font-extrabold">
+                      Junior Web Developer
+                    </p>
+                    <p class="font-mono text-sm font-bold text-blue-300">
+                      Badan Nasional Sertifikasi Profesi (BNSP)
+                    </p>
+                    <p class="font-mono text-sm">
+                      Diterbitkan Maret 2025 | Kadaluwarsa Maret 2028
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-center lg:min-w-20">
+                    <img
+                      src="dist/img/certificate/icon/bnsp.png"
+                      alt="Penerbit Logo"
+                      class="w-16 h-16 object-contain object-center"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center lg:border-l-1 lg:min-w-30"
+                >
+                  <a
+                    href="https://bnsp.net/sertifikat-bnsp/junior-web-developer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3"
+                  >
+                    Lihat Kredensial
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="w-full flex flex-col justify-center rounded-xl border-1"
+            >
+              <div
+                class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3"
+              >
+                <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
+                  <div class="flex flex-col items-start">
+                    <p class="font-mono text-lg lg:text-2xl font-extrabold">
+                      CCNAv7: Introduction to Networks
+                    </p>
+                    <p class="font-mono text-sm font-bold text-blue-300">
+                      Cisco Networking Academy
+                    </p>
+                    <p class="font-mono text-sm">Diterbitkan Mei 2023</p>
+                  </div>
+                  <div class="flex items-center justify-center lg:min-w-20">
+                    <img
+                      src="dist/img/certificate/icon/cisco.png"
+                      alt="Penerbit Logo"
+                      class="w-16 h-16 object-contain object-center"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center lg:border-l-1 lg:min-w-30"
+                >
+                  <a
+                    href="https://www.netacad.com/courses/ccna-introduction-networks?courseLang=en-US"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3"
+                  >
+                    Lihat Kredensial
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="w-full flex flex-col justify-center rounded-xl border-1"
+            >
+              <div
+                class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3"
+              >
+                <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
+                  <div class="flex flex-col items-start">
+                    <p class="font-mono text-lg lg:text-2xl font-extrabold">
+                      CCNAv7: Switching, Routing, and Wireless Essentials
+                    </p>
+                    <p class="font-mono text-sm font-bold text-blue-300">
+                      Cisco Networking Academy
+                    </p>
+                    <p class="font-mono text-sm">Diterbitkan Agustus 2023</p>
+                  </div>
+                  <div class="flex items-center justify-center lg:min-w-20">
+                    <img
+                      src="dist/img/certificate/icon/cisco.png"
+                      alt="Penerbit Logo"
+                      class="w-16 h-16 object-contain object-center"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center lg:border-l-1 lg:min-w-30"
+                >
+                  <a
+                    href="https://www.netacad.com/courses/ccna-switching-routing-wireless-essentials?courseLang=en-US"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3"
+                  >
+                    Lihat Kredensial
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="w-full flex flex-col justify-center rounded-xl border-1"
+            >
+              <div
+                class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3"
+              >
+                <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
+                  <div class="flex flex-col items-start">
+                    <p class="font-mono text-lg lg:text-2xl font-extrabold">
+                      Belajar Prinsip Pemrograman SOLID
+                    </p>
+                    <p class="font-mono text-sm font-bold text-blue-300">
+                      Dicoding Indonesia
+                    </p>
+                    <p class="font-mono text-sm">
+                      Diterbitkan Juni 2025 | Kadaluwarsa Juni 2028
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-center lg:min-w-20">
+                    <img
+                      src="dist/img/certificate/icon/dicoding.png"
+                      alt="Penerbit Logo"
+                      class="w-16 h-16 object-contain object-center"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center lg:border-l-1 lg:min-w-30"
+                >
+                  <a
+                    href="https://www.dicoding.com/certificates/1OP82G8JVPQK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3"
+                  >
+                    Lihat Kredensial
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="w-full flex flex-col justify-center rounded-xl border-1"
+            >
+              <div
+                class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3"
+              >
+                <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
+                  <div class="flex flex-col items-start">
+                    <p class="font-mono text-lg lg:text-2xl font-extrabold">
+                      Membuat Design Website SEO Friendly
+                    </p>
+                    <p class="font-mono text-sm font-bold text-blue-300">
+                      BISA AI Academy (PT BISA ARTIFISIAL INDONESIA)
+                    </p>
+                    <p class="font-mono text-sm">Diterbitkan Mei 2024</p>
+                  </div>
+                  <div class="flex items-center justify-center lg:min-w-20">
+                    <img
+                      src="dist/img/certificate/icon/bisa-ai.png"
+                      alt="Penerbit Logo"
+                      class="w-16 h-16 object-contain object-center"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center lg:border-l-1 lg:min-w-30"
+                >
+                  <a
+                    href="https://bisa.ai/portofolio/detail/NjQzMg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3"
+                  >
+                    Lihat Kredensial
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="w-full flex flex-col justify-center rounded-xl border-1"
+            >
+              <div
+                class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3"
+              >
+                <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
+                  <div class="flex flex-col items-start">
+                    <p class="font-mono text-lg lg:text-2xl font-extrabold">
+                      Figma for UI/UX Design
+                    </p>
+                    <p class="font-mono text-sm font-bold text-blue-300">
+                      MySkill
+                    </p>
+                    <p class="font-mono text-sm">Diterbitkan Juli 2025</p>
+                  </div>
+                  <div class="flex items-center justify-center lg:min-w-20">
+                    <img
+                      src="dist/img/certificate/icon/myskill.png"
+                      alt="Penerbit Logo"
+                      class="w-16 h-16 object-contain object-center"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center lg:border-l-1 lg:min-w-30"
+                >
+                  <a
+                    href="https://myskill.id/bootcamp/batch/mXsHujCYgbBUKXoZ2gnL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3"
+                  >
+                    Lihat Kredensial
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="w-full flex flex-col justify-center rounded-xl border-1"
+            >
+              <div
+                class="flex flex-col lg:flex-row justify-between my-3 mx-3 gap-3"
+              >
+                <div class="flex flex-col-reverse lg:flex-row-reverse gap-3">
+                  <div class="flex flex-col items-start">
+                    <p class="font-mono text-lg lg:text-2xl font-extrabold">
+                      Data Science
+                    </p>
+                    <p class="font-mono text-sm font-bold text-blue-300">
+                      MySkill
+                    </p>
+                    <p class="font-mono text-sm">Diterbitkan Juli 2025</p>
+                  </div>
+                  <div class="flex items-center justify-center lg:min-w-20">
+                    <img
+                      src="dist/img/certificate/icon/myskill.png"
+                      alt="Penerbit Logo"
+                      class="w-16 h-16 object-contain object-center"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-center lg:border-l-1 lg:min-w-30"
+                >
+                  <a
+                    href="https://myskill.id/bootcamp/batch/1vQZUm2hfLkLxQOwNAF9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-sans text-sm text-center underline animate-pulse lg:py-5 lg:px-3"
+                  >
+                    Lihat Kredensial
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Certificate Section End-->
+
+    <!-- Resume Section-->
+    <section
+      id="resume"
+      class="w-full min-h-screen flex items-center justify-center py-20 px-3 md:px-8"
+    >
+      <div class="container">
+        <h2 class="text-5xl font-bold text-center mb-10">Resume</h2>
+        <div class="w-full flex flex-col">
+          <div
+            class="flex flex-row items-center lg:justify-center overflow-x-auto hide-scrollbar p-5 gap-5"
+          >
+            <div class="flex-shrink-0">
+              <img
+                src="dist/img/resume/resuem-hal-1.png"
+                alt="Resume Halaman 1"
+                class="w-full h-auto max-w-xs md:max-w-sm lg:max-w-md rounded-lg shadow-lg object-contain"
+              />
+            </div>
+            <div class="flex-shrink-0">
+              <img
+                src="dist/img/resume/resuem-hal-2.png"
+                alt="Resume Halaman 2"
+                class="w-full h-auto max-w-xs md:max-w-sm lg:max-w-md rounded-lg shadow-lg object-contain"
+              />
+            </div>
+          </div>
+          <div class="flex items-center justify-center">
+            <a
+              href="dist/img/resume/resume.pdf"
+              target="_blank"
+              download
+              class="flex items-center rounded-3xl border-1 border-blue-300 hover:bg-blue-300 hover:scale-95 transition duration-300 py-2 px-4 gap-2"
+            >
+              <span>Download</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12L12 16.5M12 16.5L7.5 12M12 16.5V3"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Resume Section End-->
+
+    <!-- Contact Section-->
+    <section
+      id="contact"
+      class="w-full flex flex-col items-center py-20 px-3 md:px-8"
+    >
+      <div class="w-full max-w-4xl flex flex-col items-center justify-center">
+        <h2 class="text-4xl lg:text-6xl font-bold text-center mb-5">
+          Mempunyai Rencana Membangun Sebuah Proyek?
+          <span class="block">Saya Terbuka Untuk Berkolaborasi</span>
+        </h2>
+        <p class="font-sans text-lg md:text-2xl text-center mb-3">
+          Saya terbuka untuk berbagai kolaborasi. Baik itu dalam pekerjaan purna
+          waktu (full-time) untuk sebuah tim, atau pekerja paruh waktu
+          (part-time) untuk mengerjakan proyek tertentu. Saya akan senang
+          mendengarnya.
+        </p>
+        <p class="font-sans text-lg md:text-2xl text-center mb-8">
+          Kotak masuk saya selalu terbuka. Mari kita diskusikan bagaimana kita
+          bisa menciptakan sesuatu yang luar biasa bersama-sama.
+        </p>
+        <div class="flex flex-col lg:flex-row items-center gap-6 md:gap-8">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Gmail"
+            class="font-mono text-lg md:text-2xl underline hover:scale-105 transition duration-150 hover:text-blue-300"
+            href="mailto:taaufikkwandanii01@gmail.com"
+            >Gmail</a
+          >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            class="font-mono text-lg md:text-2xl underline hover:scale-105 transition duration-150 hover:text-blue-300"
+            href="https://www.linkedin.com/in/taufikwandani/"
+            >LinkedIn</a
+          >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            class="font-mono text-lg md:text-2xl underline hover:scale-105 transition duration-150 hover:text-blue-300"
+            href="https://github.com/taaufikkwandanii01"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End-->
+
+    <!--Footer-->
+    <footer class="pt-10 px-3 md:px-8">
+      <div
+        class="w-full flex items-center justify-center border-x border-t border-slate-700 py-5"
+      >
+        <a
+          href="#hero"
+          class="font-mono font-semibold text-sm text-slate-600 animate-pulse"
+        >
+          <span>&copy; 2025 Taufik Wandani</span>
+        </a>
+      </div>
+    </footer>
+    <!--Footer End-->
+
+    <script src="dist/js/script.js"></script>
+    <!--aos (animate on scroll)-->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--aos (animate on scroll) end-->
+  </body>
 </html>
