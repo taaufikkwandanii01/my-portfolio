@@ -5,44 +5,49 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-type DropdownName = "persib" | "nasional" | "hiburan";
+type DropdownName = "hero" | "about" | "portfolio" | "resume" | "linkedin";
+
+interface MenuItem {
+  id: DropdownName;
+  label: string;
+  href?: string;
+  submenu?: SubMenuItem[];
+}
 
 interface SubMenuItem {
   href: string;
   label: string;
 }
 
-interface MenuItem {
-  id: DropdownName;
-  label: string;
-  submenu: SubMenuItem[];
-}
-
 const MENU_ITEMS: MenuItem[] = [
   {
-    id: "persib",
-    label: "Persib",
+    id: "hero" as DropdownName,
+    label: "Hero",
+    href: "/",
+  },
+  {
+    id: "about" as DropdownName,
+    label: "About Me",
+    href: "/about",
+  },
+  {
+    id: "portfolio" as DropdownName,
+    label: "Portfolio",
     submenu: [
-      { href: "/Persib/berita-persib", label: "Berita Persib" },
-      { href: "/Persib/tim-persib", label: "Tim Persib" },
-      { href: "/Persib/jadwal-persib", label: "Jadwal & Hasil" },
+      { href: "/project", label: "Project" },
+      { href: "/experience", label: "Experience" },
+      { href: "/credentials", label: "License & Certificate" },
     ],
   },
   {
-    id: "nasional",
-    label: "Sepak Bola",
-    submenu: [
-      { href: "/Nasional/bola-nasional", label: "Bola Nasional" },
-      { href: "/Nasional/sports-jabar", label: "Sports Jabar" },
-    ],
+    id: "resume" as DropdownName,
+    label: "Resume",
+    href: "/resume",
   },
   {
-    id: "hiburan",
-    label: "Hiburan",
-    submenu: [
-      { href: "/Hiburan/arena-bobotoh", label: "Arena Bobotoh" },
-      { href: "/Hiburan/esports", label: "E-Sport & Game" },
-    ],
+    id: "linkedin" as DropdownName,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/taufikwandani/",
   },
 ];
 
@@ -102,7 +107,7 @@ const Navbar = () => {
       tabIndex={0}
     >
       {/* Navbar Glassmorphism Container */}
-      <div className="max-w-5xl h-full mx-auto absolute inset-4 lg:inset-2 rounded-xl bg-white/30 backdrop-blur-lg shadow-lg">
+      <div className="max-w-5xl h-full mx-auto absolute inset-4 lg:inset-2 rounded-xl bg-[#2D5C88]/30 backdrop-blur-lg shadow-lg">
         <div className="w-full h-full flex items-center justify-between px-4">
           {/* Logo */}
           <Link href="/" onClick={handleLinkClick}>
@@ -117,56 +122,70 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden text-sm text-gray-800 gap-8 lg:flex items-center font-semibold">
+          <ul className="hidden text-sm text-white gap-5 lg:flex items-center font-semibold">
             {MENU_ITEMS.map((item) => (
               <li key={item.id} className="relative">
-                <button
-                  onClick={() => toggleDropdown(item.id)}
-                  className={`flex items-center transition duration-150 ${
-                    openDropdown === item.id
-                      ? "text-blue-600"
-                      : "hover:text-blue-600"
-                  }`}
-                >
-                  {item.label}
-                  <svg
-                    className={`w-3 h-3 ml-1 transition-transform duration-200 ${
-                      openDropdown === item.id ? "rotate-180" : ""
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </button>
-
-                {/* Desktop Dropdown List */}
-                <div className={desktopDropdownClasses(item.id)}>
-                  {item.submenu.map((sub) => (
-                    <Link
-                      key={sub.href}
-                      href={sub.href}
-                      className="py-1.5 px-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors"
-                      onClick={handleLinkClick}
+                {item.submenu ? (
+                  // JIKA ADA SUBMENU: Tampilkan Tombol Dropdown
+                  <>
+                    <button
+                      onClick={() => toggleDropdown(item.id)}
+                      className={`flex items-center transition duration-150 cursor-pointer ${
+                        openDropdown === item.id
+                          ? "text-blue-300"
+                          : "hover:text-blue-300"
+                      }`}
                     >
-                      {sub.label}
-                    </Link>
-                  ))}
-                </div>
+                      {item.label}
+                      <svg
+                        className={`w-3 h-3 ml-1 transition-transform duration-200 ${
+                          openDropdown === item.id ? "rotate-180" : ""
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="3"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                    <div className={desktopDropdownClasses(item.id)}>
+                      {item.submenu.map((sub) => (
+                        <Link
+                          key={sub.href}
+                          href={sub.href}
+                          className="py-1.5 px-2 rounded-md hover:bg-blue-50 hover:text-blue-300 transition-colors"
+                          onClick={handleLinkClick}
+                        >
+                          {sub.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  // JIKA TIDAK ADA SUBMENU: Tampilkan Link Biasa
+                  <Link
+                    href={item.href || "#"}
+                    className="hover:text-blue-300 transition-colors"
+                    onClick={handleLinkClick}
+                  >
+                    {item.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
 
           {/* Hamburger Menu (Mobile) */}
-          <div className="lg:hidden text-gray-800 z-50">
+          <div className="lg:hidden z-50">
             <Hamburger
               toggled={isOpen}
+              // Tambahkan baris di bawah ini
+              color={isOpen ? "#EF4444" : "white"}
               toggle={() => {
                 setOpen(!isOpen);
                 if (!isOpen) setOpenDropdown(null);
@@ -179,53 +198,65 @@ const Navbar = () => {
 
       {/* Mobile Menu Slide-down */}
       <div
-        className={`w-auto absolute top-24 inset-x-4 overflow-hidden rounded-xl shadow-xl bg-[#2D5C88]/30 backdrop-blur-xl px-6 py-4 lg:hidden transition-all duration-300 border border-white/20 ${
+        className={`w-auto absolute top-24 inset-x-4 overflow-hidden rounded-xl shadow-xl bg-[#2D5C88]/30 backdrop-blur-xl px-6 py-4 lg:hidden transition-all duration-300  ${
           isOpen
             ? "visible opacity-100 translate-y-0"
             : "invisible opacity-0 -translate-y-4"
         }`}
       >
-        <ul className="flex flex-col text-sm font-bold text-black gap-1">
+        <ul className="flex flex-col text-sm font-bold text-white gap-1">
           {MENU_ITEMS.map((item) => (
             <li
               key={item.id}
               className="border-b border-gray-200/30 last:border-none"
             >
-              <button
-                onClick={() => toggleDropdown(item.id)}
-                className="w-full flex justify-between items-center py-4 hover:text-blue-700 transition-colors"
-              >
-                {item.label}
-                <svg
-                  className={`w-4 h-4 transition-transform duration-200 ${
-                    openDropdown === item.id ? "rotate-180" : ""
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-
-              {/* Mobile Accordion Content */}
-              <div className={mobileDropdownContentClasses(item.id)}>
-                {item.submenu.map((sub) => (
-                  <Link
-                    key={sub.href}
-                    href={sub.href}
-                    className="block py-2 hover:text-blue-700 transition-colors"
-                    onClick={handleLinkClick}
+              {item.submenu ? (
+                // JIKA ADA SUBMENU
+                <>
+                  <button
+                    onClick={() => toggleDropdown(item.id)}
+                    className="w-full flex justify-between items-center py-4 hover:text-blue-300 transition-colors  cursor-pointer"
                   >
-                    {sub.label}
-                  </Link>
-                ))}
-              </div>
+                    {item.label}
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-200 ${
+                        openDropdown === item.id ? "rotate-180" : ""
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
+                  <div className={mobileDropdownContentClasses(item.id)}>
+                    {item.submenu.map((sub) => (
+                      <Link
+                        key={sub.href}
+                        href={sub.href}
+                        className="block py-2 text-white hover:text-blue-300 transition-colors"
+                        onClick={handleLinkClick}
+                      >
+                        {sub.label}
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              ) : (
+                // JIKA TIDAK ADA SUBMENU
+                <Link
+                  href={item.href || "#"}
+                  className="block py-4 hover:text-blue-300 transition-colors"
+                  onClick={handleLinkClick}
+                >
+                  {item.label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
