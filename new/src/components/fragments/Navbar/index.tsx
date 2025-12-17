@@ -23,12 +23,12 @@ const MENU_ITEMS: MenuItem[] = [
   {
     id: "hero" as DropdownName,
     label: "Hero",
-    href: "/",
+    href: "#hero",
   },
   {
     id: "about" as DropdownName,
     label: "About Me",
-    href: "/about",
+    href: "#about",
   },
   {
     id: "portfolio" as DropdownName,

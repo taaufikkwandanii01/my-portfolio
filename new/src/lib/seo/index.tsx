@@ -36,7 +36,7 @@ export const constructMetadata = ({
     openGraph: {
       title: title || defaultTitle,
       description: description || defaultDesc,
-      url: "https://taaufikkwandanii01-155.vercel.app/",
+      url: "https://taufikwandani.vercel.app/",
       siteName: "Taufik Wandani Portofolio",
       images: [{ url: image || defaultImage }],
       type: "website",
@@ -55,6 +55,6 @@ export const constructMetadata = ({
       icon: "/images/Icons/favicon.png",
     },
 
-    metadataBase: new URL("https://taaufikkwandanii01-155.vercel.app/"),
+    metadataBase: new URL("https://taufikwandani.vercel.app/"),
   };
 };
